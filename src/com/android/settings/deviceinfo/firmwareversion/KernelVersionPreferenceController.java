@@ -20,6 +20,13 @@ import android.content.Context;
 
 import com.android.settings.core.BasePreferenceController;
 import com.android.settingslib.DeviceInfoUtils;
+import androidx.preference.Preference;
+import android.text.TextUtils;
+import android.util.Log;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 // LINT.IfChange
 public class KernelVersionPreferenceController extends BasePreferenceController {
