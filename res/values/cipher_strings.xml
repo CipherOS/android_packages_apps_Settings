@@ -105,4 +105,6 @@
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Statusbar items</string>
 
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
 </resources>
