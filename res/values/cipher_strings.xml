@@ -94,4 +94,7 @@
     <string name="cipher_status">Status</string>
     <string name="cipher_version">CipherOS Version</string>
 
+    <!-- Statusbar Tuner -->
+    <string name="statusbar_items_title">Statusbar items</string>
+
 </resources>
