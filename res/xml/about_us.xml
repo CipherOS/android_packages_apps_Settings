@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2017 AospExtended ROM Project
+     Copyright (C) 2022 The CipherOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/cipher_about_info">
+
+<PreferenceCategory
+    android:key="about"
+    android:title="@string/dev_info" >
+
+    <Preference
+        android:summary="@string/cipher_about_info_summary" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://cipheros.github.io/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/github"
+        android:summary="@string/github_description"
+        android:icon="@drawable/ic_github" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://github.com/CipherOS" />
+    </Preference>
+
+    <Preference
+        android:title="@string/telegram"
+        android:summary="@string/telegram_description"
+        android:icon="@drawable/ic_telegram" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://telegram.me/CipherOS_Chat" />
+    </Preference>
+
+    <Preference
+        android:title="@string/web"
+        android:summary="@string/web_description"
+        android:icon="@drawable/ic_web" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://sourceforge.net/projects/cipheros/files/" />
+    </Preference>
+
+</PreferenceCategory>
+
+<PreferenceCategory
+    android:key="leads"
+    android:title="@string/leads" >
+
+    <Preference
+        android:title="@string/team_1"
+        android:summary="@string/team1_description"
+        android:icon="@drawable/ic_devs" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/techyminati" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_2"
+        android:summary="@string/team2_description"
+        android:icon="@drawable/ic_devs" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/CyberJalagam" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_3"
+        android:summary="@string/team3_description"
+        android:icon="@drawable/ic_devs" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/alibei" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_4"
+        android:summary="@string/team4_description"
+        android:icon="@drawable/ic_devs">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/rain2wood" />
+    </Preference>
+
+     <Preference
+        android:title="@string/team_5"
+        android:summary="@string/team5_description"
+        android:icon="@drawable/ic_devs">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/kardebayan" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_6"
+        android:summary="@string/team6_description"
+        android:icon="@drawable/ic_devs">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/sarthakroy2002" />
+    </Preference>
+
+     <Preference
+        android:title="@string/team_7"
+        android:summary="@string/team7_description"
+        android:icon="@drawable/ic_devs">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/DhruvChhura" />
+    </Preference>
+
+     <Preference
+        android:title="@string/team_8"
+        android:summary="@string/team8_description"
+        android:icon="@drawable/ic_devs">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/resist15" />
+    </Preference>
+
+     <Preference
+        android:title="@string/team_9"
+        android:summary="@string/team9_description"
+        android:icon="@drawable/ic_devs">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/shashwat2003" />
+     </Preference>
+
+</PreferenceCategory>
+
+</PreferenceScreen>

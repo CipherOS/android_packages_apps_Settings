@@ -100,4 +100,37 @@
     <string name="status_bar_battery_style_dotted_circle">Dotted сircle</string>
     <string name="status_bar_battery_style_text">Text</string>
     
+    <!-- About CipherOS -->
+    <string name="cipher_about_info">About us</string>
+    <string name="cipher_about_summary">Our introduction and our team</string>
+    <string name="cipher_about_info_summary">CipherOS is a Android Custom OS, Based On AOSP, Striving to Provide its Users, A Clean, Bloat free &#38; Sturdy Experience with Minimal Customisation!</string>
+    <string name="dev_info">About CipherOS</string>
+    <string name="github">Github</string>
+    <string name="github_description">View our source code</string>
+    <string name="telegram">Telegram</string>
+    <string name="telegram_description">Subscribe to our Telegram channel</string>
+    <string name="web">Download Center</string>
+    <string name="web_description">Visit our download portal</string>
+
+     <!-- CipherOS Team-->
+    <string name="leads">Team Leads</string>
+    <string name="team_1">Aryan Sinha &#40;techyminati&#41;</string>
+    <string name="team1_description">Founder &#38; Lead Developer</string>
+    <string name="team_2">Jaishnav Prasad &#40;CyberJalagam&#41;</string>
+    <string name="team2_description">Co-Founder &#38; Core Developer</string>
+    <string name="team_3">Sebastian Kotzias &#40;alibei&#41;</string>
+    <string name="team3_description">UI/UX Lead &#38; Core Developer</string>
+    <string name="team_4">Wiley Lau &#40;rain2wood&#41;</string>
+    <string name="team4_description">UI/UX Co-Lead &#38; Maintainer Affairs</string>
+    <string name="team_5">Debayan Kar &#40;kardebayan&#41;</string>
+    <string name="team5_description">Developer</string>
+    <string name="team_6">Sarthak Roy &#40;sarthakroy2002&#41;</string>
+    <string name="team6_description">Developer</string>
+    <string name="team_7">Dhruv Chhura &#40;DhruvChhura&#41;</string>
+    <string name="team7_description">Developer</string>
+    <string name="team_8">Sourav Jagtap &#40;resist15&#41;</string>
+    <string name="team8_description">Developer</string>
+    <string name="team_9">Shashwat &#40;shashwat2003&#41;</string>
+    <string name="team9_description">Web Developer</string>
+
 </resources>

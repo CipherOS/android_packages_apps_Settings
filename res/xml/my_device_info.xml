@@ -21,6 +21,14 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <!-- About us -->
+    <Preference
+        android:key="cipher_about_info"
+        android:order="-1"
+        android:title="@string/cipher_about_info"
+        android:summary="@string/cipher_about_summary"
+        android:fragment="com.android.settings.cipher.fragments.AboutUs" />
+
     <PreferenceCategory
         android:key="basic_info_category"
         android:selectable="false"
