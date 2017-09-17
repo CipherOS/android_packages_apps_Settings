@@ -52,6 +52,14 @@
         settings:allowDividerAbove="true"
         settings:useAdminDisabledSummary="true" />
 
+    <Preference
+        android:key="traffic"
+        android:order="-10"
+        android:fragment="com.android.settings.cipher.fragments.Traffic"
+        android:icon="@drawable/ic_traffic"
+        android:title="@string/traffic_title"
+        android:summary="@string/network_traffic_state_summary" />
+
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="airplane_mode"
         android:title="@string/airplane_mode"
