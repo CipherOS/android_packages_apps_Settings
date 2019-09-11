@@ -86,6 +86,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="theme_customization_category"
+        android:title="@string/theme_customization_category"
+        android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
+
+        <ListPreference
+            android:key="android.theme.customization.font"
+            android:title="@string/theme_customization_font_title"/>
+        <ListPreference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            android:title="@string/theme_customization_icon_shape_title"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/category_name_color">
 
         <com.android.settings.widget.PrimarySwitchPreference
