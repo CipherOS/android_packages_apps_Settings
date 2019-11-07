@@ -12142,4 +12142,11 @@
     <string name="dock_multi_instances_not_supported_text">"This app can only be opened in 1 window"</string>
     <!-- Cipher Version -->
     <string name="cipher_version">Cipher version</string>
+
+    <!-- Manage applications, package string displayed in app snippet -->
+    <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
+
+    <!-- Swipe to screenshot -->
+    <string name="swipe_to_screenshot_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_summary">Swipe 3 fingers down the screen to take a screenshot</string>
 </resources>
