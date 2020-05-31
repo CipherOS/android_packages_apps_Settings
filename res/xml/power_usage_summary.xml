@@ -68,7 +68,8 @@
     <Preference
         android:key="battery_settings"
         android:title="@string/battery_style_category_title"
-        android:fragment="com.android.settings.cipher.fragments.StatusbarBattery" />
+        android:fragment="com.android.settings.cipher.fragments.StatusbarBattery"
+        android:summary="@string/battery_style_summary" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
