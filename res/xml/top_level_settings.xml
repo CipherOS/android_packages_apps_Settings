@@ -21,6 +21,15 @@
     android:key="top_level_settings">
 
     <Preference
+        android:key="top_level_about_device"
+        android:title="@string/about_settings"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_homepage_about"
+        android:order="-125"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
+    <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
@@ -132,15 +141,6 @@
         android:icon="@drawable/ic_homepage_system_dashboard"
         android:order="10"
         android:fragment="com.android.settings.system.SystemDashboardFragment"/>
-
-    <Preference
-        android:key="top_level_about_device"
-        android:title="@string/about_settings"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_homepage_about"
-        android:order="20"
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
 
     <Preference
         android:key="top_level_support"
