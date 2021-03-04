@@ -23,6 +23,12 @@
     <!-- the initial count should include the dynamic tiles -->
 
     <Preference
+        android:layout="@layout/custom_header"
+        android:title="@string/top_apps_title" 
+        android:order="-1000"
+        android:selectable="false"/>
+
+    <Preference
         android:key="all_app_info"
         android:title="@string/applications_settings"
         android:order="-999"

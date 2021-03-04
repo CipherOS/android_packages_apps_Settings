@@ -22,6 +22,11 @@
     android:title="@string/display_settings"
     settings:keywords="@string/keywords_display">
 
+    <Preference
+        android:layout="@layout/custom_header"
+        android:title="@string/top_display_title"
+        android:selectable="false"/>
+
     <com.android.settingslib.RestrictedPreference
         android:key="brightness"
         android:title="@string/brightness"

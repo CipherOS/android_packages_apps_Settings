@@ -12232,4 +12232,20 @@
     <string name="theme_settings_title">Mystery Panel</string>
     <string name="theme_settings_summary">Hunt for Customisation !</string>
     <string name="system_customization_category">System Customization</string>
+    <!-- Silky UI Strings -->
+    <string name="top_about_title">About phone</string>
+    <string name="top_accounts_title">Accounts</string>
+    <string name="top_apps_title">Apps And Notifications</string>
+    <string name="top_battery_title">Battery</string>
+    <string name="top_connected_title">Connected Devices</string>
+    <string name="top_themes_title">Themes</string>
+    <string name="top_display_title">Display</string>
+    <string name="top_privacy_title">Privacy</string>
+    <string name="top_security_title">Security Center</string>
+    <string name="top_sound_title">Sound And Vibrations</string>
+    <string name="top_storage_title">Storage</string>
+    <string name="top_system_title">System</string>
+    <string name="top_accessibility_title">Accessibility</string>
+    <string name="top_network_title">Network and Internet</string>
+    <string name="top_location_title">Location</string>
 </resources>

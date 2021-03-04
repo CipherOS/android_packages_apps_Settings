@@ -20,11 +20,18 @@
     android:key="network_and_internet_screen"
     android:title="@string/network_dashboard_title">
 
+    <Preference
+        android:layout="@layout/custom_header"
+        android:title="@string/top_network_title"
+        android:order="-45"
+        settings:allowDividerBelow="false"
+        android:selectable="false"/>
+
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
         android:layout="@layout/preference_category_no_label"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         android:order="-40"
         settings:controller="com.android.settings.network.MultiNetworkHeaderController"/>
 
