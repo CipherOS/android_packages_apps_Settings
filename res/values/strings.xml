@@ -12200,4 +12200,7 @@
     <string name="cipher_version">Cipher Version</string>
     <!-- Summary for preference when Bedtime mode is on [CHAR LIMIT=NONE] -->
     <string name="aware_summary_when_bedtime_on">Unavailable because bedtime mode is on</string>
+    <!-- Cipher maintainer -->
+    <string name="maintainer">Maintainer</string>
+
 </resources>
