@@ -37,6 +37,14 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.CipherVersionPreferenceController"/>
+
+    <!-- Cipher maintainer -->
+    <Preference
+        android:key="maintainer"
+        android:title="@string/maintainer"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CipherMaintainerPreferenceController"/>
   
   <!-- Security patch -->
     <Preference
