@@ -473,10 +473,10 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @Override
     protected void restartBatteryStatsLoader(@BatteryUpdateType int refreshType) {
         super.restartBatteryStatsLoader(refreshType);
-       /* // Update battery header if battery is present.
+        // Update battery header if battery is present.
         if (mIsBatteryPresent) {
             mBatteryHeaderPreferenceController.quickUpdateHeaderPreference();
-        } */
+        }
     }
 
     @Override
@@ -488,11 +488,6 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @Override
     public void onBatteryTipHandled(BatteryTip batteryTip) {
         restartBatteryTipLoader();
-    }
-
-    private CharSequence formatBatteryPercentageText(int batteryLevel) {
-        return TextUtils.expandTemplate(getContext().getText(R.string.battery_header_title_alternate),
-                NumberFormat.getIntegerInstance().format(batteryLevel));
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

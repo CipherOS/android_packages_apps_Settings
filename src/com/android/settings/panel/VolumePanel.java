@@ -39,7 +39,6 @@ import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settingslib.media.MediaOutputSliceConstants;
 
 import java.util.ArrayList;
