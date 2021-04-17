@@ -12202,11 +12202,6 @@
     <string name="aware_summary_when_bedtime_on">Unavailable because bedtime mode is on</string>
     <!-- Cipher maintainer -->
     <string name="maintainer">Maintainer</string>
-
-
-    <!-- Summary for preference when Bedtime mode is on [CHAR LIMIT=NONE] -->
-    <string name="aware_summary_when_bedtime_on">Unavailable because bedtime mode is on</string>
-
     <!-- Bluetooth message permission alert for notification content [CHAR LIMIT=none] -->
     <string name="bluetooth_message_access_notification_content">Untrusted device wants to access your messages. Tap for details.</string>
     <!-- Bluetooth message permission alert for dialog title [CHAR LIMIT=none] -->
