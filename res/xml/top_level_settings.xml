@@ -34,9 +34,17 @@
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_homepage_connected_device"
-        android:order="-110"
+        android:order="-115"
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
+
+    <Preference
+        android:key="top_level_theme"
+        android:title="@string/theme_settings_title"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_homepage_themes"
+        android:order="-110"
+        settings:controller="com.android.settings.cipher.controllers.TopLevelThemePreferenceController"/>
 
     <Preference
         android:key="top_level_apps_and_notifs"
