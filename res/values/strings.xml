@@ -12248,4 +12248,6 @@
     <string name="top_accessibility_title">Accessibility</string>
     <string name="top_network_title">Network and Internet</string>
     <string name="top_location_title">Location</string>
+    <!-- Radio Info -->
+    <string name="radio_info_title">Radio info</string>
 </resources>
