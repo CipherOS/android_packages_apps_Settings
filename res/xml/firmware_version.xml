@@ -29,6 +29,7 @@
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
+        android:icon="@drawable/ic_about_android"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:searchable="false"
@@ -38,6 +39,7 @@
     <Preference
         android:key="lineage_version"
         android:title="@string/cipher_version"
+        android:icon="@drawable/ic_about_cipher"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
@@ -46,6 +48,7 @@
     <Preference
         android:key="maintainer"
         android:title="@string/maintainer"
+        android:icon="@drawable/ic_about_maintainer"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.CipherMaintainerPreferenceController"/>
@@ -54,6 +57,7 @@
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
+        android:icon="@drawable/ic_about_spl"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
@@ -61,6 +65,7 @@
     <Preference
         android:key="module_version"
         android:title="@string/module_version"
+        android:icon="@drawable/ic_about_gsv"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
@@ -69,6 +74,7 @@
     <Preference
         android:key="base_band"
         android:title="@string/baseband_version"
+        android:icon="@drawable/ic_about_baseband"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
@@ -78,6 +84,7 @@
     <Preference
         android:key="kernel_version"
         android:title="@string/kernel_version"
+        android:icon="@drawable/ic_about_kernel"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
@@ -95,6 +102,7 @@
     <Preference
         android:key="os_build_number"
         android:title="@string/build_number"
+        android:icon="@drawable/ic_about_bnr"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
