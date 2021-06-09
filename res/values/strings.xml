@@ -477,7 +477,7 @@
     <string name="dlg_remove_locales_message">Text will be displayed in another language.</string>
 
     <!-- The title of the error dialog shown when the user selects all the languages and tries to remove them [CHAR LIMIT=60] -->
-    <string name="dlg_remove_locales_error_title">Can’t remove all languages</string>
+    <string name="dlg_remove_locales_error_title">Cant remove all languages</string>
     <!-- The text of the error dialog shown when the user selects all the languages and tries to remove them [CHAR LIMIT=NONE] -->
     <string name="dlg_remove_locales_error_message">Keep at least one preferred language</string>
 
@@ -4056,7 +4056,7 @@
     <!-- About phone settings screen, setting option name to see wallpapers attributions -->
     <string name="wallpaper_attributions">Wallpapers</string>
     <!-- About phone settings screen, setting option name to see wallpapers attributions values -->
-    <string name="wallpaper_attributions_values">Satellite imagery providers:\n©2014 CNES / Astrium, DigitalGlobe, Bluesky</string>
+    <string name="wallpaper_attributions_values">Satellite imagery providers:\n2014 CNES / Astrium, DigitalGlobe, Bluesky</string>
 
     <!-- Phone Manual -->
     <string name="settings_manual_activity_title">Manual</string>
@@ -4816,7 +4816,7 @@
     <!-- User dictionary settings. The list item to choose to insert a word into the user dictionary for all languages -->
     <string name="user_dict_settings_all_languages">For all languages</string>
     <!-- User dictionary settings. The text to show for the option that shows the entire list of supported locales to choose one [CHAR LIMIT=30] -->
-    <string name="user_dict_settings_more_languages">More languages…</string>
+    <string name="user_dict_settings_more_languages">More languages</string>
 
     <!-- This is for diagnostics screen. The title of a screen with various items realted to launching screens that will giev the user info. For example, it contains "Phone information" and "Battery information" -->
     <string name="testing">Testing</string>
@@ -4981,7 +4981,7 @@
         ]]>
     </string>
     <!-- Summary for the accessibility preference screen to enable screen magnification via the nav bar. [CHAR LIMIT=none] -->
-    <string name="accessibility_screen_magnification_navbar_summary">When magnification is turned on, you can zoom in on your screen.\n\n<b>To zoom</b>, start magnification, then tap anywhere on the screen.\n<ul><li>Drag 2 or more fingers to scroll</li>\n<li>Pinch 2 or more fingers to adjust zoom</li></ul>\n\n<b>To zoom temporarily</b>, start magnification, then touch &amp; hold anywhere on the screen.\n<ul><li>Drag to move around the screen</li>\n<li>Lift finger to zoom out</li></ul>\n\nYou can’t zoom in on the keyboard or navigation bar.</string>
+    <string name="accessibility_screen_magnification_navbar_summary">When magnification is turned on, you can zoom in on your screen.\n\n<b>To zoom</b>, start magnification, then tap anywhere on the screen.\n<ul><li>Drag 2 or more fingers to scroll</li>\n<li>Pinch 2 or more fingers to adjust zoom</li></ul>\n\n<b>To zoom temporarily</b>, start magnification, then touch &amp; hold anywhere on the screen.\n<ul><li>Drag to move around the screen</li>\n<li>Lift finger to zoom out</li></ul>\n\nYou cant zoom in on the keyboard or navigation bar.</string>
     <!-- Accessibility label for paging indicator in accessibility tutorial page. [CHAR LIMIT=NONE] -->
     <string name="accessibility_tutorial_pager">Page <xliff:g id="current_page" example="2">%1$d</xliff:g> of <xliff:g id="num_pages" example="3">%2$d</xliff:g></string>
     <!-- Title for the accessibility tutorial dialog in accessibility service with button. [CHAR LIMIT=50] -->
@@ -5357,16 +5357,16 @@
          content. Since we don't know what the app is showing on top of the input target, we
          can't verify user consent. [CHAR LIMIT=NONE] -->
     <string name="touch_filtered_warning">Because an app is obscuring a permission request, Settings
-        can’t verify your response.</string>
+        cant verify your response.</string>
     <!-- Warning that the device data will not be encrypted with password or PIN if
         enabling an accessibility service and there is a secure lock setup. [CHAR LIMIT=NONE] -->
     <string name="enable_service_encryption_warning">If you turn on <xliff:g id="service"
-        example="TalkBack">%1$s</xliff:g>, your device won’t use your screen lock to enhance
+        example="TalkBack">%1$s</xliff:g>, your device wont use your screen lock to enhance
         data encryption.</string>
     <!-- Warning that the device data will not be encrypted with password or PIN if
          choosing a secure lock and there is an enabled accessibility service. [CHAR LIMIT=NONE] -->
     <string name="secure_lock_encryption_warning">Because you\u2019ve turned on an accessibility service,
-        your device won’t use your screen lock to enhance data encryption.</string>
+        your device wont use your screen lock to enhance data encryption.</string>
 
     <!-- Message to the user to enter his pattern before enabling an accessibility service. [CHAR LIMIT=NONE] -->
     <string name="enable_service_pattern_reason">Because turning on <xliff:g id="service"
@@ -6260,7 +6260,7 @@
     <!-- Title of warning shown to the user before they can install a CA certificate [CHAR LIMIT=NONE] -->
     <string name="ca_certificate_warning_title">Your data won\u2019t be private</string>
     <!-- Description of warning shown to the user before they can install a CA certificate [CHAR LIMIT=NONE] -->
-    <string name="ca_certificate_warning_description">CA certificates are used by websites, apps, and VPNs for encryption. Only install CA certificates from organizations you trust. \n\n If you install a CA certificate, the certificate owner could access your data, such as passwords or credit card details, from websites you visit or apps you use – even if your data is encrypted.</string>
+    <string name="ca_certificate_warning_description">CA certificates are used by websites, apps, and VPNs for encryption. Only install CA certificates from organizations you trust. \n\n If you install a CA certificate, the certificate owner could access your data, such as passwords or credit card details, from websites you visit or apps you use  even if your data is encrypted.</string>
     <!-- Label for button to not install a certificate [CHAR_LIMIT=50] -->
     <string name="certificate_warning_dont_install">Don\u2019t install</string>
     <!-- Label for button to continue installing a certificate [CHAR_LIMIT=50] -->
@@ -8453,7 +8453,7 @@
     <string name="conversation_section_switch_summary">Allow app to use conversation section</string>
 
     <!-- [CHAR LIMIT=NONE] Conversation preference summary, the parent channel this conversation was spawned from (separator) the parent channel group (e.g. an account name)-->
-    <string name="notification_conversation_summary" translatable="false">"<xliff:g id="parent_category_name">%1$s</xliff:g> • <xliff:g id="parent_category_group_name">%2$s</xliff:g>"</string>
+    <string name="notification_conversation_summary" translatable="false">"<xliff:g id="parent_category_name">%1$s</xliff:g>  <xliff:g id="parent_category_group_name">%2$s</xliff:g>"</string>
 
     <!-- [CHAR LIMIT=100] Field on conversation settings page -->
     <string name="demote_conversation_title">Not a conversation</string>
@@ -8563,7 +8563,7 @@
     <!-- [CHAR LIMIT=150] Notification Importance title: important conversation level summary -->
     <string name="notification_channel_summary_priority">Shows at top of conversation section, appears as floating bubble, displays profile picture on lock screen</string>
 
-    <string name="convo_not_supported_summary"><xliff:g id="app_name" example="Android Services">%1$s</xliff:g> doesn\u2019t support most conversation features. You can’t set a conversation as priority, and conversations won’t appear as floating bubbles.</string>
+    <string name="convo_not_supported_summary"><xliff:g id="app_name" example="Android Services">%1$s</xliff:g> doesn\u2019t support most conversation features. You cant set a conversation as priority, and conversations wont appear as floating bubbles.</string>
 
     <!-- Channel summaries for the app notification page -->
 
@@ -9171,7 +9171,7 @@
     <string name="zen_mode_reminders_summary">From tasks and reminders</string>
     <!-- [CHAR LIMIT=50] Zen mode settings: Reminders (ie: calendar reminders are allowed to bypass dnd) -->
     <string name="zen_mode_reminders_list">reminders</string>
-    <!-- [CHAR LIMIT=50] Zen mode settings: Reminders (ie: calendar reminders) category in a list of elements that can bypass DND where reminders is the first or only element in the list. For example, "Reminds can interrupt” or "Reminders and events can interrupt” -->
+    <!-- [CHAR LIMIT=50] Zen mode settings: Reminders (ie: calendar reminders) category in a list of elements that can bypass DND where reminders is the first or only element in the list. For example, "Reminds can interrupt or "Reminders and events can interrupt -->
     <string name="zen_mode_reminders_list_first">Reminders</string>
 
     <!-- [CHAR LIMIT=80] Zen mode settings: Allow event notifications/sounds to bypass DND -->
@@ -9180,7 +9180,7 @@
     <string name="zen_mode_events_summary">From upcoming calendar events</string>
     <!-- [CHAR LIMIT=50] Zen mode settings: Events (ie: calendar events) -->
     <string name="zen_mode_events_list">events</string>
-    <!-- [CHAR LIMIT=50] Zen mode settings: Events (ie: calendar events) category in a list of sounds when events is the first or only element in the list. For example “Events can interrupt" or “Events and touch sounds can interrupt" -->
+    <!-- [CHAR LIMIT=50] Zen mode settings: Events (ie: calendar events) category in a list of sounds when events is the first or only element in the list. For example Events can interrupt" or Events and touch sounds can interrupt" -->
     <string name="zen_mode_events_list_first">Events</string>
 
     <!-- [CHAR LIMIT=100] Zen mode settings: Allow apps to bypass DND -->
@@ -10209,7 +10209,7 @@
     <!-- Title for dialog displayed when user selects on a setting locked by an admin [CHAR LIMIT=30 BACKUP_MESSAGE_ID:4867639270211833535] -->
     <string name="disabled_by_policy_title">Action not allowed</string>
     <!-- Title for dialog displayed to tell user that changing volume was disallowed by an admin [CHAR LIMIT=50] -->
-    <string name="disabled_by_policy_title_adjust_volume">Can’t change volume</string>
+    <string name="disabled_by_policy_title_adjust_volume">Cant change volume</string>
     <!-- Title for dialog displayed to tell user that outgoing calls were disabled by an admin [CHAR LIMIT=50] -->
     <string name="disabled_by_policy_title_outgoing_calls">Calling not allowed</string>
     <!-- Title for dialog displayed to tell user that sending SMS were disabled by an admin [CHAR LIMIT=50] -->
@@ -10219,7 +10219,7 @@
     <!-- Title for dialog displayed to tell user that screenshots are disabled by an admin [CHAR LIMIT=50] -->
     <string name="disabled_by_policy_title_screen_capture">Screenshot not allowed</string>
     <!-- Title for dialog displayed to tell user that the app was suspended by an admin [CHAR LIMIT=50] -->
-    <string name="disabled_by_policy_title_suspend_packages">Can’t open this app</string>
+    <string name="disabled_by_policy_title_suspend_packages">Cant open this app</string>
     <!-- Shown when the user tries to change a settings locked by an admin [CHAR LIMIT=200] -->
     <string name="default_admin_support_msg">If you have questions, contact your IT admin</string>
     <!-- Shown in dialog to allow user to see more information about the device admin [CHAR LIMIT=30] -->
@@ -10988,7 +10988,7 @@
     <string name="web_action_enable_title">Instant apps</string>
 
     <!-- Summary text for enabling web actions. [CHAR_LIMIT=250] -->
-    <string name="web_action_enable_summary">Open links in apps, even if they’re not installed</string>
+    <string name="web_action_enable_summary">Open links in apps, even if theyre not installed</string>
 
     <!-- Section title for the Web Action preference [CHAR LIMIT=60] -->
     <string name="web_action_section_title">Instant apps</string>
@@ -11037,7 +11037,7 @@
     <string name="enterprise_privacy_header">To provide access to your work data, your organization may change settings and install software on your device.\n\nFor more details, contact your organization\'s admin.</string>
     <!-- Title for the 'Types of information your organization can see' preference category. [CHAR LIMIT=60] -->
     <string name="enterprise_privacy_exposure_category">Types of information your organization can see</string>
-    <!-- Title for the 'Changes made by your organization’s admin' preference category. [CHAR LIMIT=60] -->
+    <!-- Title for the 'Changes made by your organizations admin' preference category. [CHAR LIMIT=60] -->
     <string name="enterprise_privacy_exposure_changes_category">Changes made by your organization\'s admin</string>
     <!-- Title for the 'Your access to this device' preference category. [CHAR LIMIT=60] -->
     <string name="enterprise_privacy_device_access_category">Your access to this device</string>
@@ -11289,7 +11289,7 @@
     <string name="zen_suggestion_summary">Pause notifications to stay focused</string>
 
     <!-- The divider symbol between different parts of the notification header including spaces. not translatable [CHAR LIMIT=3] -->
-    <string name="notification_header_divider_symbol_with_spaces" translatable="false">" • "</string>
+    <string name="notification_header_divider_symbol_with_spaces" translatable="false">"  "</string>
 
     <!-- Title of a message for an empty state screen. A user will see this message if they try to use a certain feature, but the feature was turned off so it won't slow down their phone. [CHAR LIMIT=NONE] -->
     <string name="disabled_feature">Feature not available</string>
@@ -11365,16 +11365,16 @@
     <!-- Slices Strings -->
 
     <!-- Summary text on a card explaining that a setting does not exist / is not supported on the device [CHAR_LIMIT=NONE]-->
-    <string name="unsupported_setting_summary" product="default">Setting isn’t supported on this phone</string>
+    <string name="unsupported_setting_summary" product="default">Setting isnt supported on this phone</string>
 
     <!-- Summary text on a card explaining that a setting does not exist / is not supported on the device [CHAR_LIMIT=NONE]-->
-    <string name="unsupported_setting_summary" product="tablet">Setting isn’t supported on this tablet</string>
+    <string name="unsupported_setting_summary" product="tablet">Setting isnt supported on this tablet</string>
 
     <!-- Summary text on a card explaining that a setting does not exist / is not supported on the device [CHAR_LIMIT=NONE]-->
-    <string name="unsupported_setting_summary" product="device">Setting isn’t supported on this device</string>
+    <string name="unsupported_setting_summary" product="device">Setting isnt supported on this device</string>
 
     <!-- Summary text on a card explaining that a setting cannot be changed by the current user. [CHAR_LIMIT=NONE] -->
-    <string name="disabled_for_user_setting_summary">Setting can’t be changed by current user</string>
+    <string name="disabled_for_user_setting_summary">Setting cant be changed by current user</string>
 
     <!-- Summary text on a card explaining a setting cannot be changed right now because it needs another setting to be changed. [CHAR_LIMIT=NONE] -->
     <string name="disabled_dependent_setting_summary">Depends on another setting</string>
