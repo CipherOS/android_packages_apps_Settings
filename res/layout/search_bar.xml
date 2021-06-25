@@ -59,11 +59,4 @@
         </Toolbar>
     </com.google.android.material.card.MaterialCardView>
 
-    <ImageView
-        android:id="@+id/account_avatar"
-        android:layout_marginRight="28dp"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center_vertical"
-        android:contentDescription="@string/search_bar_account_avatar_content_description" />
 </LinearLayout>

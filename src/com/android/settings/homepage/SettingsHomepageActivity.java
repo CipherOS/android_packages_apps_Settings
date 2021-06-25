@@ -38,10 +38,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.android.internal.util.UserIcons;
-
 import com.android.settings.R;
-import com.android.settings.accounts.AvatarViewMixin;
 import com.android.settings.core.HideNonSystemOverlayMixin;
 import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
@@ -51,7 +48,6 @@ import com.android.settingslib.drawable.CircleFramedDrawable;
 public class SettingsHomepageActivity extends FragmentActivity {
 
     Context context;
-    ImageView avatarView;
     UserManager mUserManager;
 
     @Override
@@ -74,19 +70,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-
-        avatarView = root.findViewById(R.id.account_avatar);
-        //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
-        avatarView.setImageDrawable(getCircularUserIcon(context));
-        avatarView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
-                startActivity(intent);
-            }
-        });
-        //getLifecycle().addObserver(avatarViewMixin);
 
         if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
             // Only allow contextual feature on high ram devices.
@@ -127,25 +110,9 @@ public class SettingsHomepageActivity extends FragmentActivity {
         view.requestFocus();
     }
 
-    private Drawable getCircularUserIcon(Context context) {
-        Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
-
-        if (bitmapUserIcon == null) {
-            // get default user icon.
-            final Drawable defaultUserIcon = UserIcons.getDefaultUserIcon(
-                    context.getResources(), UserHandle.myUserId(), false);
-            bitmapUserIcon = UserIcons.convertToBitmap(defaultUserIcon);
-        }
-        Drawable drawableUserIcon = new CircleFramedDrawable(bitmapUserIcon,
-                (int) context.getResources().getDimension(R.dimen.circle_avatar_size));
-
-        return drawableUserIcon;
-    }
-
     @Override
     public void onResume() {
         super.onResume();
-        avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
 
     }
 }
