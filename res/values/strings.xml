@@ -12229,7 +12229,7 @@
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">build date, build info</string>
     <!-- Theme Settings -->
-    <string name="theme_settings_title">Cipher Lab</string>
+    <string name="theme_settings_title">Cipher Cave</string>
     <string name="theme_settings_summary">Hunt for Customisation !</string>
     <string name="system_customization_category">System Customization</string>
 </resources>
