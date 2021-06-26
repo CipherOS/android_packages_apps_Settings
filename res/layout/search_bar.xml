@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2021 Project 404
+     Copyright (c) 2020-2021 CipherOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,40 +21,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/search_bar_margin"
-    android:layout_marginTop="@dimen/search_bar_margin"
-    android:layout_marginEnd="@dimen/search_bar_margin"
-    android:layout_marginBottom="16.0dip"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="13dp"
     app:layout_scrollFlags="enterAlways|scroll">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/search_bar"
         style="@style/SearchBarStyle"
-        android:layout_marginStart="@dimen/search_bar_margin"
-        android:layout_marginTop="@dimen/search_bar_margin"
-        android:layout_marginBottom="@dimen/search_bar_margin"
-        android:layout_marginEnd="28dp"
-        android:layout_width="200dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1.0">
-
+        android:layout_weight="1.0"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp">
 
         <Toolbar
             android:id="@+id/search_action_bar"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/search_bar_height"
-            android:layout_marginStart="-2.0dip"
+            android:layout_marginLeft="-7dp"
+            android:layout_gravity="left|center_horizontal"
             android:background="@drawable/search_bar_selected_background"
-            android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset"
-            android:navigationIcon="@drawable/ic_homepage_search">
+            android:navigationIcon="@drawable/ic_homepage_search"
+            android:color="@color/searchHintColor">
 
             <TextView
                 android:id="@+id/search_action_bar_title"
                 style="@style/TextAppearance.SearchBar"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:text="@string/search_menu" />
+                android:layout_gravity="left|center_horizontal"
+                android:textColor="@color/searchHintColor"
+                android:text="@string/search_menu"
+                android:includeFontPadding="true"
+                android:paddingLeft="-11dp"/>
 
 
         </Toolbar>
