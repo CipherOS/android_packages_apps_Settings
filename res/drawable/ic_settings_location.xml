@@ -14,14 +14,17 @@
     limitations under the License.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24.0dp"
-        android:height="24.0dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
+        android:width="30.0dp"
+        android:height="30.0dp"
+        android:viewportWidth="30.0"
+        android:viewportHeight="30.0">
     <path
-        android:fillColor="?android:attr/colorPrimary"
-        android:pathData="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13C19,5.13 15.87,2 12,2zM7,9c0,-2.76 2.24,-5 5,-5s5,2.24 5,5c0,2.88 -2.88,7.19 -5,9.88C9.92,16.21 7,11.85 7,9z"/>
+        android:fillColor="#ffc65c"
+        android:pathData="M15,15m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"/>
     <path
-        android:fillColor="?android:attr/colorPrimary"
-        android:pathData="M12,9m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0"/>
+        android:fillColor="@drawable/ic_settings_location__0"
+        android:pathData="M16.3774,23.0723C20.4592,19.6471 22.5,16.5992 22.5,13.9286C22.5,9.8682 19.1421,6.4286 15,6.4286C10.8579,6.4286 7.5,9.8682 7.5,13.9286C7.5,16.5183 9.419,19.4627 13.2571,22.7619L13.6226,23.0723C14.4192,23.7408 15.5808,23.7408 16.3774,23.0723Z"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M15,13.9286m-3.2143,0a3.2143,3.2143 0,1 1,6.4286 0a3.2143,3.2143 0,1 1,-6.4286 0"/>
 </vector>

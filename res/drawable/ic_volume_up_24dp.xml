@@ -15,17 +15,17 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
+        android:width="30dp"
+        android:height="30dp"
+        android:viewportWidth="30.0"
+        android:viewportHeight="30.0">
     <path
-        android:fillColor="?android:attr/colorPrimary"
-        android:pathData="M3,9v6h4l5,5V4L7,9H3zM10,8.83v6.34L7.83,13H5v-2h2.83L10,8.83z"/>
+        android:fillColor="#fc8269"
+        android:pathData="M15,15m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"/>
     <path
-        android:fillColor="?android:attr/colorPrimary"
-        android:pathData="M16.5,12c0,-1.77 -1.02,-3.29 -2.5,-4.03v8.05C15.48,15.29 16.5,13.77 16.5,12z"/>
+        android:fillColor="#ffffff"
+        android:pathData="M10.3243,13.2096C10.3243,13.2096 19.2868,5.5436 19.2868,9.3771L19.2868,20.7557C19.2868,24.3075 10.3243,16.65 10.3243,16.65L10.3243,13.2096Z"/>
     <path
-        android:fillColor="?android:attr/colorPrimary"
-        android:pathData="M14,3.23v2.06c2.89,0.86 5,3.54 5,6.71c0,3.17 -2.11,5.85 -5,6.71v2.06c4.01,-0.91 7,-4.49 7,-8.77C21,7.72 18.01,4.14 14,3.23z"/>
+        android:fillColor="@drawable/ic_settings_sound_item__0"
+        android:pathData="M10.7143,11.1739L12.8571,11.1739L12.8571,18.7157L10.7143,18.7157C9.5308,18.7157 8.5714,17.7563 8.5714,16.5729L8.5714,13.3168C8.5714,12.1333 9.5308,11.1739 10.7143,11.1739Z"/>
 </vector>
