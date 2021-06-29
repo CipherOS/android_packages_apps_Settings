@@ -791,7 +791,8 @@
 
     <!-- oneui spacebar -->
     <style name="homepage_spacer_title_style">
-        <item name="android:textSize">40sp</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold|normal</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:fontFamily">google-sans-medium</item>
     </style>

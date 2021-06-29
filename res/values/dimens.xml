@@ -430,12 +430,6 @@
     <!-- Text padding for EmptyTextSettings -->
     <dimen name="empty_text_padding">24dp</dimen>
 
-    <dimen name="homepage_spacer_off_margin">@dimen/actionbar_size</dimen>
-    <dimen name="homepage_spacer_height">250dp</dimen>
-    <dimen name="homepage_spacer_margin">255dp</dimen>
-    <dimen name="homepage_spacer_height_base">200dp</dimen>
-    <dimen name="homepage_spacer_margin_base">255dp</dimen>
-    <dimen name="homepage_logo_size">50dp</dimen>
-    <dimen name="homepage_spacer_imageview_marginBottom">10dp</dimen>
-    <dimen name="homepage_spacer_title_marginTop">50dp</dimen>
+    <dimen name="homepage_spacer_height">51dp</dimen>
+    <dimen name="homepage_spacer_height_base">36dp</dimen>
 </resources>

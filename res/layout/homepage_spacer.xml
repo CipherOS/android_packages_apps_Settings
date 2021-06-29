@@ -18,19 +18,19 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/settings_homepage_spacer"
     android:layout_width="match_parent"
     android:layout_height="@dimen/homepage_spacer_height"
     android:outlineProvider="none"
-    app:cardBackgroundColor="?android:attr/colorPrimary"
+    app:cardBackgroundColor="@color/actionbarColor"
     app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
     <TextView 
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
         android:textAppearance="@style/homepage_spacer_title_style"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
         android:text="@string/settings_label" />
 
 </com.google.android.material.card.MaterialCardView>
