@@ -36,16 +36,19 @@ import android.os.PowerManager;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
+import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.EventLog;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -66,6 +69,7 @@ import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.datausage.DataUsagePreference;
 import com.android.settings.datausage.DataUsageUtils;
 import com.android.settings.location.WifiScanningFragment;
+import com.android.settings.network.MobileDataEnabledListener;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.wifi.AddNetworkFragment;
 import com.android.settings.wifi.AddWifiNetworkPreference;
@@ -94,6 +98,10 @@ import com.android.wifitrackerlib.WifiEntry;
 import com.android.wifitrackerlib.WifiEntry.ConnectCallback;
 import com.android.wifitrackerlib.WifiPickerTracker;
 
+import com.google.android.setupcompat.template.FooterButtonStyleUtils;
+import com.google.android.setupcompat.util.WizardManagerHelper;
+import com.google.android.setupdesign.GlifPreferenceLayout;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -104,7 +112,8 @@ import java.util.Optional;
 public class NetworkProviderSettings extends RestrictedSettingsFragment
         implements Indexable, WifiPickerTracker.WifiPickerTrackerCallback,
         WifiDialog2.WifiDialog2Listener, DialogInterface.OnDismissListener,
-        AirplaneModeEnabler.OnAirplaneModeChangedListener, InternetUpdater.InternetChangeListener {
+        AirplaneModeEnabler.OnAirplaneModeChangedListener, InternetUpdater.InternetChangeListener,
+        MobileDataEnabledListener.Client {
 
     private static final String TAG = "NetworkProviderSettings";
     // IDs of context menu
@@ -164,6 +173,8 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
     // Enable the Next button when a Wi-Fi network is connected.
     private boolean mEnableNextOnConnection;
 
+    private boolean mIsInSetupWizard;
+
     // This string extra specifies a network to open the connect dialog on, so the user can enter
     // network credentials.  This is used by quick settings for secured networks, among other
     // things.
@@ -194,6 +205,9 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
 
     protected WifiManager mWifiManager;
     private WifiManager.ActionListener mSaveListener;
+
+    int mSubId = SubscriptionManager.INVALID_SUBSCRIPTION_ID;
+    MobileDataEnabledListener mDataStateListener;
 
     protected InternetResetHelper mInternetResetHelper;
 
@@ -258,6 +272,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
 
     public NetworkProviderSettings() {
         super(DISALLOW_CONFIG_WIFI);
+        mSubId = SubscriptionManager.getActiveDataSubscriptionId();
     }
 
     @Override
@@ -265,6 +280,18 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
         super.onViewCreated(view, savedInstanceState);
         Activity activity = getActivity();
         if (activity == null) {
+            return;
+        }
+
+        if (mIsInSetupWizard) {
+            GlifPreferenceLayout layout = (GlifPreferenceLayout) view;
+            layout.setDividerInsets(Integer.MAX_VALUE, 0);
+
+            layout.setIcon(getContext().getDrawable(R.drawable.ic_network_setup));
+            layout.setHeaderText(R.string.provider_internet_settings);
+            FooterButtonStyleUtils.applyPrimaryButtonPartnerResource(activity, getNextButton(),
+                    true);
+
             return;
         }
 
@@ -297,6 +324,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
             return;
         }
         mAirplaneModeEnabler = new AirplaneModeEnabler(getContext(), this);
+        mDataStateListener = new MobileDataEnabledListener(getContext(), this);
 
         // TODO(b/37429702): Add animations and preference comparator back after initial screen is
         // loaded (ODR).
@@ -344,6 +372,8 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
                 fixConnectivityItem.setVisible(!mIsGuest && (!isAirplaneModeOn || isWifiEnabled));
             }
         };
+        final Intent intent = this.getIntent();
+        mIsInSetupWizard = WizardManagerHelper.isAnySetupWizard(intent);
     }
 
     private void updateUserType() {
@@ -351,6 +381,17 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
         if (userManager == null) return;
         mIsAdmin = userManager.isAdminUser();
         mIsGuest = userManager.isGuestUser();
+    }
+
+    @Override
+    public RecyclerView onCreateRecyclerView(LayoutInflater inflater, ViewGroup parent,
+            Bundle savedInstanceState) {
+        if (mIsInSetupWizard) {
+            GlifPreferenceLayout layout = (GlifPreferenceLayout) parent;
+            return layout.onCreateRecyclerView(inflater, parent, savedInstanceState);
+        } else {
+            return super.onCreateRecyclerView(inflater, parent, savedInstanceState);
+        }
     }
 
     private void addPreferences() {
@@ -464,6 +505,11 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
             }
         };
 
+        if (mIsInSetupWizard) {
+            mConfigureWifiSettingsPreference.setVisible(false);
+            mDataUsagePreference.setVisible(false);
+        }
+
         if (savedInstanceState != null) {
             mDialogMode = savedInstanceState.getInt(SAVE_DIALOG_MODE);
             mDialogWifiEntryKey = savedInstanceState.getString(SAVE_DIALOG_WIFIENTRY_KEY);
@@ -499,6 +545,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
             return;
         }
         mAirplaneModeEnabler.start();
+        mDataStateListener.start(mSubId);
     }
 
     private void restrictUi() {
@@ -527,7 +574,8 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
         }
 
         changeNextButtonState(mWifiPickerTracker != null
-                && mWifiPickerTracker.getConnectedWifiEntry() != null);
+                && mWifiPickerTracker.getConnectedWifiEntry() != null
+                || getDataEnabled());
     }
 
     @Override
@@ -536,6 +584,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
         getView().removeCallbacks(mUpdateWifiEntryPreferencesRunnable);
         getView().removeCallbacks(mHideProgressBarRunnable);
         mAirplaneModeEnabler.stop();
+        mDataStateListener.stop();
         super.onStop();
     }
 
@@ -914,7 +963,8 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
             setProgressBarVisible(false);
         }
         changeNextButtonState(mWifiPickerTracker != null
-                && mWifiPickerTracker.getConnectedWifiEntry() != null);
+                && mWifiPickerTracker.getConnectedWifiEntry() != null
+                || getDataEnabled());
 
         // Edit the Wi-Fi network of specified SSID.
         if (mOpenSsid != null && mWifiPickerTracker != null) {
@@ -989,7 +1039,9 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
 
                 if (mClickedConnect) {
                     mClickedConnect = false;
-                    scrollToPreference(connectedWifiPreferenceCategory);
+                    if (!mIsInSetupWizard) {
+                        scrollToPreference(connectedWifiPreferenceCategory);
+                    }
                 }
             }
         } else {
@@ -1110,10 +1162,12 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
 
     @VisibleForTesting
     void setAdditionalSettingsSummaries() {
-        mConfigureWifiSettingsPreference.setSummary(getString(
-                isWifiWakeupEnabled()
-                        ? R.string.wifi_configure_settings_preference_summary_wakeup_on
-                        : R.string.wifi_configure_settings_preference_summary_wakeup_off));
+        if (!mIsInSetupWizard) {
+            mConfigureWifiSettingsPreference.setSummary(getString(
+                    isWifiWakeupEnabled()
+                            ? R.string.wifi_configure_settings_preference_summary_wakeup_on
+                            : R.string.wifi_configure_settings_preference_summary_wakeup_off));
+        }
 
         final int numSavedNetworks = mWifiPickerTracker == null ? 0 :
                 mWifiPickerTracker.getNumSavedNetworks();
@@ -1161,7 +1215,9 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
     }
 
     protected void setProgressBarVisible(boolean visible) {
-        showPinnedHeader(visible);
+        if (!mIsInSetupWizard) {
+            showPinnedHeader(visible);
+        }
     }
 
     @VisibleForTesting
@@ -1195,7 +1251,7 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
      * Renames/replaces "Next" button when appropriate. "Next" button usually exists in
      * Wi-Fi setup screens, not in usual wifi settings screen.
      *
-     * @param enabled true when the device is connected to a wifi network.
+     * @param enabled true when the device is connected to a mobile or wifi network.
      */
     @VisibleForTesting
     void changeNextButtonState(boolean enabled) {
@@ -1474,6 +1530,17 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
             // update the menu item
             requireActivity().invalidateMenu();
         }
+    }
+
+    /**
+     * Implementation of {@code MobileDataEnabledListener.Client}
+     */
+    public void onMobileDataEnabledChange() {
+        changeNextButtonState(getDataEnabled());
+    }
+
+    boolean getDataEnabled() {
+        return getContext().getSystemService(TelephonyManager.class).getDataEnabled(mSubId);
     }
 
     /**
