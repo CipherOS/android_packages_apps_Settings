@@ -21,12 +21,12 @@
     android:key="sound_settings"
     settings:keywords="@string/keywords_sounds">
 
-    <Preference
+   <Preference
         android:layout="@layout/custom_header"
         android:title="@string/top_sound_title"
         android:order="-190"
         android:selectable="false"/>
-
+     
     <!-- Remote volume group -->
     <PreferenceCategory
         settings:allowDividerBelow="false"
@@ -34,6 +34,7 @@
         android:key="remote_media_group"
         android:title=""
         android:order="-185"
+        settings:controller="com.android.settings.notification.RemoteVolumeGroupController">
     </PreferenceCategory>
 
     <!-- Media volume -->
