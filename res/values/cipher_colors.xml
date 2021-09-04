@@ -18,4 +18,6 @@
 <resources>
     <color name="searchHintColor">#838383</color>
     <color name="homepage_theme_background">#6C8FFF</color>
+    <color name="homepage_google_background">#6C8FFF</color>
+    <color name="homepage_wellbeing_background">#FC8269</color>
 </resources>
