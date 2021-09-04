@@ -19,9 +19,6 @@
         android:viewportWidth="30.0"
         android:viewportHeight="30.0">
     <path
-        android:fillColor="#ffc65c"
-        android:pathData="M15,15m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"/>
-    <path
         android:fillColor="@drawable/ic_settings_location__0"
         android:pathData="M16.3774,23.0723C20.4592,19.6471 22.5,16.5992 22.5,13.9286C22.5,9.8682 19.1421,6.4286 15,6.4286C10.8579,6.4286 7.5,9.8682 7.5,13.9286C7.5,16.5183 9.419,19.4627 13.2571,22.7619L13.6226,23.0723C14.4192,23.7408 15.5808,23.7408 16.3774,23.0723Z"/>
     <path

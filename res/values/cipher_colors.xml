@@ -17,4 +17,5 @@
 
 <resources>
     <color name="searchHintColor">#838383</color>
+    <color name="homepage_theme_background">#6C8FFF</color>
 </resources>
