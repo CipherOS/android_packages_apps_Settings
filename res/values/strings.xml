@@ -12633,4 +12633,6 @@
     <string name="content_protection_preference_subpage_summary"></string>
     <!-- Default information at the bottom of the subpage of content protection settings. Will be overlaid by OEM. -->
     <string name="content_protection_preference_subpage_info"></string>
+    <!-- Cipher Version -->
+    <string name="cipher_version">Cipher version</string>
 </resources>
