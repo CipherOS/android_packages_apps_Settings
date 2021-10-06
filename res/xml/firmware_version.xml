@@ -37,6 +37,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
+    <!-- Cipher Version  -->
+    <Preference
+        android:key="cipher_version"
+        android:title="@string/cipher_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CipherVersionPreferenceController"/>
+
     <!-- Mainline module version -->
     <Preference
         android:key="module_version"
