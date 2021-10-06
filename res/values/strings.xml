@@ -14655,4 +14655,6 @@ Data usage charges may apply.</string>
         <item>.inversePrimary:@sud_system_primary_inverse_light</item>
     </string-array>
 
+    <!-- Cipher Version -->
+    <string name="cipher_version">Cipher version</string>
 </resources>
