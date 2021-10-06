@@ -14399,4 +14399,7 @@ Data usage charges may apply.</string>
     <!-- Title for supervision PIN verification screen [CHAR LIMIT=60] -->
     <string name="supervision_full_screen_pin_verification_title">Enter supervision PIN</string>
     <string name="accessibility_illustration_content_description"><xliff:g id="feature" example="Select to Speak">%1$s</xliff:g> animation</string>
+
+    <!-- Cipher Version -->
+    <string name="cipher_version">Cipher version</string>
 </resources>
