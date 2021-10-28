@@ -516,6 +516,14 @@ public class NetworkProviderSettings extends RestrictedSettingsFragment
                 final WifiConfiguration wifiConfiguration = data.getParcelableExtra(
                         ConfigureWifiEntryFragment.NETWORK_CONFIG_KEY);
                 if (wifiConfiguration != null) {
+                    Activity activity = getActivity();
+                    if (activity == null) {
+                        return;
+                    }
+                    mWifiManager = activity.getSystemService(WifiManager.class);
+                    if (mWifiManager == null) {
+                        return;
+                    }
                     mWifiManager.connect(wifiConfiguration,
                             new WifiConnectActionListener());
                 }
