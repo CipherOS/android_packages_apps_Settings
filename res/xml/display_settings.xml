@@ -80,6 +80,12 @@
         android:title="@string/developer_smallest_width"
         settings:allowDividerBelow="true"/>
 
+    <Preference
+        android:key="monet_settings"
+        android:title="@string/monet_engine_settings_title"
+        android:summary="@string/monet_engine_settings_summary"
+        android:fragment="com.android.settings.cipher.fragments.MonetSettings" />
+
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="night_display"
         android:title="@string/night_display_title"
