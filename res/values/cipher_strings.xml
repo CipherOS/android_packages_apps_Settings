@@ -159,4 +159,8 @@
 
     <!-- Auto Rotate String -->
     <string name="auto_rotate_settings_primary_switch_summary">Rotate your screen when you move your device between portrait and landscape</string>
+
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
 </resources>
