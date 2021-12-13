@@ -55,7 +55,7 @@
     
     <!-- Monet engine -->
     <string name="monet_engine_settings_title">Monet engine</string>
-    <string name="monet_engine_settings_summary"> Adjust accent color, colorfulness and brightness</string>
+    <string name="monet_engine_settings_summary"> Adjust accent color, colorfulness and more</string>
     <string name="accurate_shades_title">Use accurate shades</string>
     <string name="use_wallpaper_color_title">Use wallpaper color</string>
     <string name="color_override_title">Accent color picker</string>
