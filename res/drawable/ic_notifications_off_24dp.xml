@@ -1,5 +1,6 @@
 <!--
   Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2021 The CipherOS Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -21,7 +22,7 @@
     android:viewportHeight="24.0"
     android:viewportWidth="24.0"
     android:width="24dp"
-    android:tint="?android:attr/colorControlNormal">
+    android:tint="@color/ic_homepage_color">
     <path android:fillColor="#FF000000"
           android:pathData="M12,22c1.1,0 2,-0.9 2,-2h-4C10,21.1 10.9,22 12,22z" />
     <path android:fillColor="#FF000000"

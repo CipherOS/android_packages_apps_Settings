@@ -1,5 +1,6 @@
 <!--
     Copyright (C) 2017 The Android Open Source Project
+    Copyright (C) 2021 The CipherOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -14,13 +15,16 @@
     limitations under the License.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0"
+        android:width="36dp"
+        android:height="36dp"
+        android:viewportWidth="30.0"
+        android:viewportHeight="30.0"
         android:tint="?android:attr/colorControlNormal">
-    <path
-        android:pathData="M18,17V11C18,7.93 16.37,5.36 13.5,4.68V4C13.5,3.17 12.83,2.5 12,2.5C11.17,2.5 10.5,3.17 10.5,4V4.68C7.64,5.36 6,7.92 6,11V17H4V19H14H14.38H20V17H18ZM16,17H8V11C8,8.52 9.51,6.5 12,6.5C14.49,6.5 16,8.52 16,11V17ZM14,20C14,21.1 13.1,22 12,22C10.9,22 10,21.1 10,20H14Z"
-        android:fillType="evenOdd"
-        android:fillColor="?android:attr/colorPrimary"/>
+    <group
+        android:translateX="-8">
+        <path
+            android:pathData="M23.7319,11.8075C22.885,11.8075 22.1986,12.4939 22.1986,13.3408C22.1986,14.1878 22.885,14.8742 23.7319,14.8742C24.5789,14.8742 25.2653,14.1878 25.2653,13.3408C25.2653,12.4939 24.5789,11.8075 23.7319,11.8075ZM20.5986,13.3408C20.5986,11.6102 22.0013,10.2075 23.7319,10.2075C25.4625,10.2075 26.8653,11.6102 26.8653,13.3408C26.8653,15.0714 25.4625,16.4742 23.7319,16.4742C22.0013,16.4742 20.5986,15.0714 20.5986,13.3408ZM12.843,13.3631C12.4293,13.3631 12.0875,13.7049 12.0875,14.1186V24.2075H22.1764C22.5901,24.2075 22.9319,23.8657 22.9319,23.4519V17.2297H24.5319V23.4519C24.5319,24.7493 23.4738,25.8075 22.1764,25.8075H11.2875H10.4875V25.0075V14.1186C10.4875,12.8212 11.5457,11.7631 12.843,11.7631H19.843V13.3631H12.843ZM15.1764,16.4742H19.843V14.8742H15.1764V16.4742Z"
+            android:fillType="evenOdd"
+            android:fillColor="?android:attr/colorPrimary"/>
+    </group>
 </vector>

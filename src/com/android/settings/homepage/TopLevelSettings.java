@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018 The Android Open Source Project
+ * Copyright (C) 2021 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -114,6 +115,15 @@ public class TopLevelSettings extends DashboardFragment implements
             final Drawable icon = preference.getIcon();
             if (icon != null) {
                 icon.setTint(tintColor);
+            }
+            if ("homepage_category".equals(preference.getKey())){
+                preference.setLayoutResource(R.layout.homepage_category);
+            }
+            if ("homepage_category_top".equals(preference.getKey())){
+                preference.setLayoutResource(R.layout.homepage_category_top);
+            }
+            if ("homepage_category_spacer".equals(preference.getKey())){
+                preference.setLayoutResource(R.layout.homepage_category_spacer);
             }
         }
     }

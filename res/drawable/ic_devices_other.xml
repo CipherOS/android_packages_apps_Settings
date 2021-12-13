@@ -1,5 +1,6 @@
 <!--
     Copyright (C) 2017 The Android Open Source Project
+    Copyright (C) 2021 The CipherOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -14,12 +15,15 @@
     limitations under the License.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
-    <path
-        android:pathData="M3,6.003H21V4.003H3C1.9,4.003 1,4.903 1,6.003V18.003C1,19.103 1.9,20.003 3,20.003H7V18.003H3V6.003ZM13.002,12.001H9.002V13.781C8.392,14.331 8.002,15.111 8.002,16.001C8.002,16.891 8.392,17.671 9.002,18.221V20.001H13.002V18.221C13.612,17.671 14.002,16.881 14.002,16.001C14.002,15.121 13.612,14.331 13.002,13.781V12.001ZM9.501,16.003C9.501,16.833 10.171,17.503 11.001,17.503C11.831,17.503 12.501,16.833 12.501,16.003C12.501,15.173 11.831,14.503 11.001,14.503C10.171,14.503 9.501,15.173 9.501,16.003ZM22,8.004H16C15.5,8.004 15,8.504 15,9.004V19.004C15,19.504 15.5,20.004 16,20.004H22C22.5,20.004 23,19.504 23,19.004V9.004C23,8.504 22.5,8.004 22,8.004ZM17.002,18H21.002V10H17.002V18Z"
-        android:fillType="evenOdd"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:width="36dp"
+        android:height="36dp"
+        android:viewportWidth="30.0"
+        android:viewportHeight="30.0">
+    <group
+        android:translateX="-8">
+        <path
+            android:pathData="M18.0576,9.9849C17.8121,9.8212 17.4965,9.806 17.2363,9.9452C16.9762,10.0844 16.8138,10.3555 16.8138,10.6505V16.3355L13.7903,13.9167L12.7908,15.1661L16.3332,18L12.7908,20.8339L13.7903,22.0833L16.8138,19.6645V25.3495C16.8138,25.6446 16.9762,25.9156 17.2363,26.0549C17.4965,26.1941 17.8121,26.1788 18.0576,26.0152L23.2455,22.5566C23.4615,22.4126 23.5942,22.1727 23.6014,21.9131C23.6086,21.6536 23.4894,21.4067 23.2817,21.2509L18.9472,18L23.2817,14.7491C23.4894,14.5933 23.6086,14.3464 23.6014,14.0869C23.5942,13.8274 23.4615,13.5875 23.2455,13.4435L18.0576,9.9849ZM21.4171,14.1475L18.4138,16.4V12.1453L21.4171,14.1475ZM21.4171,21.8525L18.4138,19.6V23.8547L21.4171,21.8525Z"
+            android:fillType="evenOdd"
+            android:fillColor="?android:attr/colorPrimary"/>
+    </group>
 </vector>

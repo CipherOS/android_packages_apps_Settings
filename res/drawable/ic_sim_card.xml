@@ -1,5 +1,6 @@
 <!--
   Copyright (C) 2020 The Android Open Source Project
+  Copyright (C) 2021 The CipherOS Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -14,34 +15,15 @@
   limitations under the License.
   -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
+    android:width="26dp"
+    android:height="26dp"
     android:viewportWidth="24"
-    android:viewportHeight="24"
-    android:tint="?android:attr/colorControlNormal"
-    >
+    android:viewportHeight="24">
 
     <path
-        android:fillColor="#FF000000"
-        android:pathData="M18,2h-8L4,8v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V4C20,2.9,19.1,2,18,2z M18,4v16H6V8.83L10.83,4L18,4L18,4z" />
+        android:fillColor="#000000"
+        android:pathData="M20.84,7l-3-4.59A1,1,0,0,0,17,2H8A1,1,0,0,0,7,3V5H4A1,1,0,0,0,3,6V21a1,1,0,0,0,1,1H16a1,1,0,0,0,1-1V19h3a1,1,0,0,0,1-1V7.59A1.1,1.1,0,0,0,20.84,7ZM15,20H5V7h7.46L15,10.89V20Zm4-3H17V10.59a1.1,1.1,0,0,0-0.16-0.55l-3-4.59A1,1,0,0,0,13,5H9V4h7.46L19,7.89Z" />
     <path
-        android:fillColor="#FF000000"
-        android:pathData="M 7 17 H 9 V 19 H 7 V 17 Z" />
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M 15 17 H 17 V 19 H 15 V 17 Z" />
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M 7 11 H 9 V 15 H 7 V 11 Z" />
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M 11 15 H 13 V 19 H 11 V 15 Z" />
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M 11 11 H 13 V 13 H 11 V 11 Z" />
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M 15 11 H 17 V 15 H 15 V 11 Z" />
-    <path
-        android:pathData="M0,0h24v24H0V0z" />
+        android:fillColor="#000000"
+        android:pathData="M13,13H7a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V14A1,1,0,0,0,13,13Zm-1,4H8V15h4Z" />
 </vector>

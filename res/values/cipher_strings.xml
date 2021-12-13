@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright 2020 Project 404
-     Copyright 2020 Cipher OS Project
+     Copyright 2020-2021 The CipherOS Project
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -45,5 +45,12 @@
 
     <!-- Cipher maintainer -->
     <string name="maintainer">Maintainer</string>
+
+    <!-- Homepage -->
+    <string name="homepage_connectivity">Connectivity</string>
+    <string name="homepage_device">Device</string>
+    <string name="homepage_security">Security</string>
+    <string name="homepage_customizations">Customizations</string>
+    <string name="homepage_system">System</string>
     
 </resources>

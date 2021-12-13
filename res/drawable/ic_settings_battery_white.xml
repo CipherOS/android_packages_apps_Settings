@@ -1,5 +1,6 @@
 <!--
   Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2021 The CipherOS Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -14,15 +15,15 @@
   limitations under the License.
   -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
-    <path
-        android:pathData="M9.5,4V2H14.5V4H16.67C17.4,4 18,4.6 18,5.33V15V20.67C18,21.4 17.4,22 16.66,22H7.33C6.6,22 6,21.4 6,20.67V15V5.33C6,4.6 6.6,4 7.33,4H9.5ZM8,15V20H16V15V6H8V15Z"
-        android:fillType="evenOdd"
-        android:fillColor="?android:attr/colorPrimary"/>
-    <path
-        android:pathData="M16.67,22H7.33C6.6,22 6,21.4 6,20.67V5.33C6,4.6 6.6,4 7.33,4H16.67C17.4,4 18,4.6 18,5.33V20.67C18,21.4 17.4,22 16.67,22Z"
-        android:fillColor="?android:attr/colorPrimary"/>
+        android:width="36dp"
+        android:height="36dp"
+        android:viewportWidth="30.0"
+        android:viewportHeight="30.0">
+    <group
+        android:translateX="-8">
+        <path
+            android:pathData="M15.1847,9.885V10.2119H13.975C12.9892,10.2119 12.19,11.0111 12.19,11.9969V25.4439C12.19,26.4297 12.9892,27.2289 13.975,27.2289H22.0193C23.0051,27.2289 23.8043,26.4297 23.8043,25.4439V11.9969C23.8043,11.0111 23.0051,10.2119 22.0193,10.2119H20.8096V9.885C20.8096,9.2692 20.3104,8.77 19.6946,8.77H16.2997C15.6839,8.77 15.1847,9.2692 15.1847,9.885ZM13.76,11.9969C13.76,11.8782 13.8563,11.7819 13.975,11.7819H22.0193C22.1381,11.7819 22.2343,11.8782 22.2343,11.9969V25.4439C22.2343,25.5626 22.1381,25.6589 22.0193,25.6589H13.975C13.8563,25.6589 13.76,25.5626 13.76,25.4439V11.9969ZM18.5361,16.1518C18.5361,16.05 18.4625,15.9601 18.3548,15.9306C18.2472,15.9011 18.131,15.9389 18.0686,16.0236L15.8004,19.1059C15.7482,19.1768 15.7433,19.2681 15.7877,19.3432C15.8322,19.4184 15.9186,19.4653 16.0127,19.4653H17.4303C17.4378,19.4653 17.4451,19.468 17.4504,19.4728C17.4557,19.4777 17.4587,19.4842 17.4587,19.491V21.289C17.4587,21.3909 17.5323,21.4807 17.6399,21.5103C17.7475,21.5398 17.8638,21.502 17.9262,21.4172L20.1943,18.3349C20.2465,18.264 20.2514,18.1728 20.207,18.0976C20.1626,18.0225 20.0761,17.9755 19.982,17.9755H18.5644C18.5569,17.9755 18.5497,17.9728 18.5444,17.968C18.539,17.9632 18.5361,17.9567 18.5361,17.9499V16.1518Z"
+            android:fillType="evenOdd"
+            android:fillColor="?android:attr/colorPrimary"/>
+    </group>
 </vector>

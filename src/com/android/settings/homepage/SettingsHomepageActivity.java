@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018 The Android Open Source Project
+ * Copyright (C) 2021 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -103,9 +104,12 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        avatarView = findViewById(R.id.account_avatar);
+        avatarView = findViewById(R.id.account_avatar_mirror);
         //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
         avatarView.setImageDrawable(getCircularUserIcon(context));
+        // Fix avatar size
+        avatarView.getLayoutParams().height = (int) context.getResources().getDimension(R.dimen.avatar_length_mirror);
+        avatarView.getLayoutParams().width = (int) context.getResources().getDimension(R.dimen.avatar_length_mirror);
         avatarView.setVisibility(View.VISIBLE);
         avatarView.setOnClickListener(new View.OnClickListener() {
             @Override

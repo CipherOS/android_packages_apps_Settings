@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The Android Open Source Project
+ * Copyright (C) 2021 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +20,7 @@ import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.ArrayMap;
@@ -34,6 +36,7 @@ import androidx.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.CategoryMixin.CategoryHandler;
 import com.android.settings.core.CategoryMixin.CategoryListener;
@@ -187,6 +190,11 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                     // Give all controllers a chance to handle click.
                     preference.getExtras().putInt(CATEGORY, getMetricsCategory());
                 });
+        final PreferenceScreen screen = getPreferenceScreen();
+        if (screen == null) {
+            return;
+        }
+        tintIcons(screen);
     }
 
     @Override
@@ -522,6 +530,7 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
             }
             unregisterDynamicDataObservers(entry.getValue());
         }
+        tintIcons(screen);
     }
 
     @Override
@@ -566,5 +575,20 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
             mRegisteredObservers.remove(observer);
             resolver.unregisterContentObserver(observer);
         });
+    }
+
+    private void tintIcons(PreferenceScreen screen) {
+        final int tintColor = Utils.getHomepageIconColor(getContext());
+        final int count = screen.getPreferenceCount();
+        for (int i = 0; i < count; i++) {
+            final Preference preference = screen.getPreference(i);
+            if (preference == null) {
+                break;
+            }
+            final Drawable icon = preference.getIcon();
+            if (icon != null) {
+                icon.setTint(tintColor);
+            }
+        }
     }
 }

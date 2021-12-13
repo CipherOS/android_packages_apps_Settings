@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2021 The CipherOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M165,272c-24.813,0-45,20.187-45,45c0,19.555,12.541,36.228,30,42.42V407c0,8.284,6.716,15,15,15s15-6.716,15-15v-47.58 c17.459-6.192,30-22.865,30-42.42C210,292.187,189.813,272,165,272z M165,332c-8.271,0-15-6.729-15-15s6.729-15,15-15 s15,6.729,15,15S173.271,332,165,332z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M424.58,362c6.192,17.458,22.865,30,42.42,30c24.813,0,45-20.187,45-45s-20.187-45-45-45 c-19.555,0-36.228,12.542-42.42,30H330v-30h77c3.859,0,7.57-1.488,10.361-4.154l31.206-29.811 C454.197,270.574,460.433,272,467,272c24.813,0,45-20.187,45-45s-20.187-45-45-45s-45,20.187-45,45 c0,7.297,1.757,14.188,4.853,20.29L400.986,272H330v-15c0-19.555-12.541-36.228-30-42.42V135C300,60.561,239.439,0,165,0 S30,60.561,30,135v79.58C12.541,220.772,0,237.445,0,257v180c0,24.813,20.187,45,45,45h240c24.813,0,45-20.187,45-45v-15h70.026 l24.772,29.384C422.991,456.251,422,461.511,422,467c0,24.813,20.187,45,45,45s45-20.187,45-45s-20.187-45-45-45 c-8.23,0-15.944,2.231-22.588,6.104l-25.943-30.773C415.618,393.951,411.422,392,407,392h-77v-30H424.58z M467,332 c8.271,0,15,6.729,15,15s-6.729,15-15,15s-15-6.729-15-15S458.729,332,467,332z M467,212c8.271,0,15,6.729,15,15s-6.729,15-15,15 s-15-6.729-15-15S458.729,212,467,212z M60,135c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105v77h-30v-77 c0-41.355-33.645-75-75-75s-75,33.645-75,75v77H60V135z M210,135v77h-90v-77c0-24.813,20.187-45,45-45S210,110.187,210,135z M300,437c0,8.271-6.729,15-15,15H45c-8.271,0-15-6.729-15-15V257c0-8.271,6.729-15,15-15h240c8.271,0,15,6.729,15,15V437z M467,452c8.271,0,15,6.729,15,15s-6.729,15-15,15s-15-6.729-15-15S458.729,452,467,452z" />
+</vector>

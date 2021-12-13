@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2009 The Android Open Source Project
+     Copyright (C) 2021 The CipherOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -127,9 +128,9 @@
 
     <!-- Search bar -->
     <dimen name="search_bar_margin">16dp</dimen>
-    <dimen name="search_bar_height">52dp</dimen>
+    <dimen name="search_bar_height">46dp</dimen>
     <dimen name="search_bar_text_size">20sp</dimen>
-    <dimen name="search_bar_corner_radius">28dp</dimen>
+    <dimen name="search_bar_corner_radius">10dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
 
     <!-- Avatar -->
@@ -139,7 +140,7 @@
 
     <!-- Homepage title -->
     <dimen name="homepage_title_margin_bottom">8dp</dimen>
-    <dimen name="homepage_title_margin_horizontal">24dp</dimen>
+    <dimen name="homepage_title_margin_horizontal">16dp</dimen>
 
     <!-- Dimensions for Wifi Assistant Card -->
     <dimen name="wifi_assistant_padding_top_bottom">16dp</dimen>

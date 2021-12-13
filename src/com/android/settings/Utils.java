@@ -1,5 +1,6 @@
 /**
  * Copyright (C) 2007 Google Inc.
+ * Copyright (C) 2021 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy
@@ -98,6 +99,7 @@ import android.widget.TabWidget;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.IconCompat;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
@@ -1219,7 +1221,7 @@ public final class Utils extends com.android.settingslib.Utils {
      */
     @ColorInt
     public static int getHomepageIconColor(Context context) {
-        return getColorAttrDefaultColor(context, android.R.attr.textColorSecondary);
+        return ContextCompat.getColor(context, R.color.ic_homepage_color);
     }
 
     public static boolean isProviderModelEnabled(Context context) {
