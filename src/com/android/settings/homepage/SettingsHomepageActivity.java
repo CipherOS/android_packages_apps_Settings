@@ -108,8 +108,6 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
         avatarView.setImageDrawable(getCircularUserIcon(context));
         // Fix avatar size
-        avatarView.getLayoutParams().height = (int) context.getResources().getDimension(R.dimen.avatar_length_mirror);
-        avatarView.getLayoutParams().width = (int) context.getResources().getDimension(R.dimen.avatar_length_mirror);
         avatarView.setVisibility(View.VISIBLE);
         avatarView.setOnClickListener(new View.OnClickListener() {
             @Override

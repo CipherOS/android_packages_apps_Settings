@@ -45,14 +45,15 @@
                 android:layout_gravity="start"
                 android:text="@string/search_menu"/>
         </Toolbar>
+        <ImageView
+            android:id="@+id/account_avatar_mirror"
+            android:paddingEnd="@dimen/search_bar_avatar_end_padding"
+            android:paddingTop="@dimen/search_bar_avatar_top_bottom_padding"
+            android:paddingBottom="@dimen/search_bar_avatar_top_bottom_padding"
+            android:layout_width="@dimen/avatar_length"
+            android:layout_height="@dimen/search_bar_height"
+            android:layout_gravity="end"/>
     </com.google.android.material.card.MaterialCardView>
-
-    <ImageView
-        android:id="@+id/account_avatar_mirror"
-        android:layout_width="@dimen/avatar_length"
-        android:layout_height="@dimen/avatar_length"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="-4dp"/>
 
 </LinearLayout>
 

@@ -128,10 +128,12 @@
 
     <!-- Search bar -->
     <dimen name="search_bar_margin">16dp</dimen>
-    <dimen name="search_bar_height">46dp</dimen>
+    <dimen name="search_bar_height">48dp</dimen>
     <dimen name="search_bar_text_size">20sp</dimen>
-    <dimen name="search_bar_corner_radius">10dp</dimen>
+    <dimen name="search_bar_corner_radius">24dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
+    <dimen name="search_bar_avatar_end_padding">20dp</dimen>
+    <dimen name="search_bar_avatar_top_bottom_padding">8dp</dimen>
 
     <!-- Avatar -->
     <dimen name="avatar_length">48dp</dimen>
