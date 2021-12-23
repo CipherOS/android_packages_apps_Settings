@@ -1,0 +1,31 @@
+<!--
+    Copyright (C) 2021 The CipherOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M431.993,159.986c-5.463,0.053-10.876,1.049-16,2.944v-2.944c0.002-32.979-10.253-65.141-29.344-92.032l40.656-40.656 L404.681,4.674l-39.072,39.072c-61.426-58.328-157.774-58.328-219.2,0L107.305,4.674L84.681,27.298l40.656,40.656 c-19.091,26.891-29.346,59.053-29.344,92.032v2.944c-5.124-1.895-10.537-2.891-16-2.944c-26.51,0-48,21.49-48,48v128 c0,26.51,21.49,48,48,48c5.463-0.053,10.876-1.049,16-2.944v34.944h48v96h96v-96h32v96h96v-96h48v-34.944 c5.124,1.895,10.537,2.891,16,2.944c26.51,0,48-21.49,48-48v-128C479.993,181.476,458.503,159.986,431.993,159.986z M95.993,335.986c0,8.837-7.163,16-16,16s-16-7.163-16-16v-128c0-8.837,7.163-16,16-16s16,7.163,16,16V335.986z M207.993,479.986 h-32v-64h32V479.986z M335.993,479.986h-32v-64h32V479.986z M383.993,383.986h-256v-192h256V383.986z M127.993,159.986 c0-70.692,57.308-128,128-128s128,57.308,128,128H127.993z M447.993,335.986c0,8.837-7.163,16-16,16s-16-7.163-16-16v-128 c0-8.837,7.163-16,16-16s16,7.163,16,16V335.986z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 191.993 95.986 H 223.993 V 127.986 H 191.993 V 95.986 Z" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 287.993 95.986 H 319.993 V 127.986 H 287.993 V 95.986 Z" />
+</vector>

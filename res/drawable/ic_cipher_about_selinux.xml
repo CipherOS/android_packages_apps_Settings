@@ -1,0 +1,26 @@
+<!--
+    Copyright (C) 2021 The CipherOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="25dp"
+    android:height="24dp"
+    android:viewportWidth="25"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M2 12c0-5.52285 4.47715-10 10-10 5.5228 0 10 4.47715 10 10 0 0.3071-0.0138 0.6107 -0.0408 0.9102 -0.0496 0.5501 0.3561 1.0362 0.9062 1.0858 0.5501 0.0495 1.0362-0.3562 1.0857-0.9062 0.0324 -0.3592 0.0489 -0.7227 0.0489 -1.0898 0-6.62742-5.3726-12-12-12-6.62742 0-12 5.37258-12 12 0 6.6274 5.37258 12 12 12 1.5376 0 3.01-0.2897 4.3638-0.8184 0.5144 -0.2009 0.7686 -0.7808 0.5677 -1.2953-0.2009-0.5144-0.7808-0.7686-1.2953-0.5677-1.1256 0.4396 -2.3515 0.6814 -3.6362 0.6814 -5.52285 0-10-4.4772-10-10zm17 7c0-1.1046 0.8954 -2 2-2s2 0.8954 2 2-0.8954 2-2 2-2-0.8954-2-2zm2-4c-2.2091 0-4 1.7909-4 4s1.7909 4 4 4 4-1.7909 4-4-1.7909-4-4-4z" />
+</vector>

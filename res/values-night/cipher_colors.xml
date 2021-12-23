@@ -16,5 +16,7 @@
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
 
     <color name="ic_homepage_color">@*android:color/accent_device_default_dark</color>
+    <color name="cipher_about_page_card_logo">@*android:color/accent_device_default_light</color>
+    <color name="cipher_about_page_card">#424242</color>
 
 </resources>

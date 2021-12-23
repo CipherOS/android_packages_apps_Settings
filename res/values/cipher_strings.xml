@@ -84,4 +84,14 @@
     <string name="show_network_traffic_all">Both</string>
     <string name="nettraf_font_size">Single net font size</string>
 
+    <!-- About page -->
+    <string name="cipher_baseband_version">Baseband Version</string>
+    <string name="cipher_build_date">Build Date</string>
+    <string name="cipher_firmware_version">Android Version</string>
+    <string name="cipher_kernel_version">Kernel Version</string>
+    <string name="cipher_model">Device</string>
+    <string name="cipher_security_patch">Android Security Update</string>
+    <string name="cipher_status">Status</string>
+    <string name="cipher_version">CipherOS Version</string>
+
 </resources>

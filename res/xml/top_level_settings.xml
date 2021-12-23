@@ -210,7 +210,7 @@
         android:summary="@string/system_dashboard_summary"/>
 
     <Preference
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:fragment="com.android.settings.cipher.fragments.AboutPage"
         android:icon="@drawable/ic_phone_info"
         android:key="top_level_about_device"
         android:order="20"
