@@ -84,6 +84,10 @@
     <string name="show_network_traffic_all">Both</string>
     <string name="nettraf_font_size">Single net font size</string>
 
+    <!-- Keyguard force small clock -->
+    <string name="lockscreen_small_clock_title">Force small clock</string>
+    <string name="lockscreen_small_clock_summary">Don\'t switch to the big clock when there are no notifications</string>
+
     <!-- About page -->
     <string name="cipher_baseband_version">Baseband Version</string>
     <string name="cipher_build_date">Build Date</string>
