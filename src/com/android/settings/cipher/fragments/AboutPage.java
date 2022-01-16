@@ -53,50 +53,6 @@ public class AboutPage extends DashboardFragment {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
-        final PreferenceScreen screen = getPreferenceScreen();
-        if (screen == null) {
-            return;
-        }
-        final int count = screen.getPreferenceCount();
-        for (int i = 0; i < count; i++) {
-            final Preference preference = screen.getPreference(i);
-            if (preference == null) {
-                break;
-            }
-            if ("cipher_version".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_with_logo_top);
-            }
-            if ("cipher_status".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_with_logo_middle);
-            }
-            if ("cipher_maintainer".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_with_logo_bottom);
-            }
-            if ("cipher_about_spacer".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_spacer);
-            }
-            if ("cipher_model".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_top);
-            }
-            if ("cipher_firmware_version".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_middle);
-            }
-            if ("cipher_security_key".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_middle);
-            }
-            if ("cipher_base_band".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_middle);
-            }
-            if ("cipher_kernel_version".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_kernel);
-            }
-            if ("cipher_selinux_status".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_middle);
-            }
-            if ("cipher_build_date".equals(preference.getKey())){
-                preference.setLayoutResource(R.layout.cipher_about_bottom);
-            }
-        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

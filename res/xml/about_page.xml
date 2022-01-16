@@ -27,7 +27,8 @@
         android:title="@string/cipher_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.cipher.controller.CipherVersionPreferenceController"/>
+        settings:controller="com.android.settings.cipher.controller.CipherVersionPreferenceController"
+        settings:layout="@layout/cipher_about_with_logo_top"/>
 
     <Preference
         android:key="cipher_status"
@@ -35,7 +36,8 @@
         android:title="@string/cipher_status"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.cipher.controller.CipherStatusPreferenceController"/>
+        settings:controller="com.android.settings.cipher.controller.CipherStatusPreferenceController"
+        settings:layout="@layout/cipher_about_with_logo_middle"/>
 
     <Preference
         android:key="cipher_maintainer"
@@ -43,12 +45,14 @@
         android:title="@string/maintainer"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.CipherMaintainerPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CipherMaintainerPreferenceController"
+        settings:layout="@layout/cipher_about_with_logo_bottom"/>
 
     <Preference
         android:key="cipher_about_spacer"
         android:order="30"
-        android:selectable="false"/>
+        android:selectable="false"
+        settings:layout="@layout/cipher_about_spacer"/>
 
     <Preference
         android:key="cipher_model"
@@ -57,7 +61,8 @@
         android:title="@string/cipher_model"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.cipher.controller.CipherModelPreferenceController"/>
+        settings:controller="com.android.settings.cipher.controller.CipherModelPreferenceController"
+        settings:layout="@layout/cipher_about_top"/>
 
     <Preference
         android:key="cipher_firmware_version"
@@ -66,7 +71,8 @@
         android:title="@string/cipher_firmware_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"
+        settings:layout="@layout/cipher_about_middle"/>
 
     <Preference
         android:key="cipher_security_key"
@@ -75,7 +81,8 @@
         android:title="@string/cipher_security_patch"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"
+        settings:layout="@layout/cipher_about_middle"/>
 
     <Preference
         android:key="cipher_base_band"
@@ -84,7 +91,8 @@
         android:title="@string/cipher_baseband_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"
+        settings:layout="@layout/cipher_about_middle"/>
 
     <Preference
         android:key="cipher_kernel_version"
@@ -93,7 +101,8 @@
         android:title="@string/cipher_kernel_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.cipher.controller.CipherKernelPreferenceController"/>
+        settings:controller="com.android.settings.cipher.controller.CipherKernelPreferenceController"
+        settings:layout="@layout/cipher_about_kernel"/>
 
     <Preference
         android:key="cipher_selinux_status"
@@ -102,7 +111,8 @@
         android:title="@string/selinux_status"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"
+        settings:layout="@layout/cipher_about_middle"/>
 
     <Preference
         android:key="cipher_build_date"
@@ -111,6 +121,7 @@
         android:title="@string/cipher_build_date"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:controller="com.android.settings.cipher.controller.CipherDatePreferenceController"/>
+        settings:controller="com.android.settings.cipher.controller.CipherDatePreferenceController"
+        settings:layout="@layout/cipher_about_bottom"/>
 
 </PreferenceScreen>
