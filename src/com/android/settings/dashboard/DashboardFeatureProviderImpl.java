@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The Android Open Source Project
+ * Copyright (C) 2022 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -425,6 +426,13 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
         Drawable iconDrawable = icon.loadDrawable(preference.getContext());
         if (TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
             iconDrawable.setTint(Utils.getHomepageIconColor(preference.getContext()));
+            if ("com.google.android.gms".equals(tile.getPackageName()) && "Google".equalsIgnoreCase(tile.getTitle(preference.getContext()).toString())) {
+                iconDrawable = preference.getContext().getDrawable(R.drawable.cipher_ic_google);
+                preference.setLayoutResource(R.layout.cipher_card_accent_middle);
+            } else if ("com.google.android.apps.wellbeing".equals(tile.getPackageName())) {
+                iconDrawable = preference.getContext().getDrawable(R.drawable.cipher_ic_wellbeing);
+                preference.setLayoutResource(R.layout.cipher_card_accent_middle);
+            }
         } else if (forceRoundedIcon && !TextUtils.equals(mContext.getPackageName(), iconPackage)) {
             iconDrawable = new AdaptiveIcon(mContext, iconDrawable,
                     R.dimen.dashboard_tile_foreground_image_inset);
