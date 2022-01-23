@@ -16,6 +16,8 @@
 
 package com.android.settings.cipher.fragments;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,6 +29,7 @@ import androidx.preference.PreferenceScreen;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.deviceinfo.BuildNumberPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
@@ -35,9 +38,18 @@ public class AboutPage extends DashboardFragment {
 
     public static final String TAG = "AboutPage";
 
+    private BuildNumberPreferenceController mBuildNumberPreferenceController;
+
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.CIPHER;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mBuildNumberPreferenceController = use(BuildNumberPreferenceController.class);
+        mBuildNumberPreferenceController.setHost(this /* parent */);
     }
 
     @Override
@@ -53,6 +65,14 @@ public class AboutPage extends DashboardFragment {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (mBuildNumberPreferenceController.onActivityResult(requestCode, resultCode, data)) {
+            return;
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

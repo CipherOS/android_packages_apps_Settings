@@ -120,8 +120,7 @@
         android:order="100"
         android:title="@string/cipher_build_date"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:controller="com.android.settings.cipher.controller.CipherDatePreferenceController"
+        settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"
         settings:layout="@layout/cipher_about_bottom"/>
 
 </PreferenceScreen>

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The Android Open Source Project
+ * Copyright (C) 2021 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +24,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.os.Build;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.text.BidiFormatter;
@@ -67,6 +69,8 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
     private int mDevHitCountdown;
     private boolean mProcessingLastDevHit;
 
+    private static final String DATE_PROPERTY = "ro.cipher.build.date";
+
     public final static java.lang.String[] insults = {
             "Hahaha, n00b!",
             "What are you doing??",
@@ -98,7 +102,10 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
 
     @Override
     public CharSequence getSummary() {
-        return BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY);
+        String date = SystemProperties.get(DATE_PROPERTY,
+                this.mContext.getString(R.string.device_info_default));
+        date = date.replace("_", " ");
+        return date;
     }
 
     @Override
