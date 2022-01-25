@@ -88,6 +88,10 @@
     <string name="lockscreen_small_clock_title">Force small clock</string>
     <string name="lockscreen_small_clock_summary">Don\'t switch to the big clock when there are no notifications</string>
 
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
+
     <!-- About page -->
     <string name="cipher_baseband_version">Baseband Version</string>
     <string name="cipher_build_date">Build Date</string>
