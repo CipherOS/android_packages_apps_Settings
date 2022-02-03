@@ -617,4 +617,7 @@
 
     <!-- Whether to put the apps with system UID into system component bucket or not -->
     <bool name="config_battery_combine_system_components">false</bool>
+
+    <!-- Indicates whether device has a front facing fingerprint sensor (not udfps). -->
+    <bool name="config_is_front_facing_fps" translatable="false">false</bool>
 </resources>
