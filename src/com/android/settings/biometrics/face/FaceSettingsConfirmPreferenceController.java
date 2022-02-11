@@ -28,6 +28,8 @@ import androidx.preference.Preference;
 
 import com.android.settings.Utils;
 
+import com.android.settings.custom.biometrics.FaceUtils;
+
 import java.util.List;
 
 /**
@@ -86,7 +88,7 @@ public class FaceSettingsConfirmPreferenceController extends FaceSettingsPrefere
                 && properties.get(0).getSensorStrength() == SensorProperties.STRENGTH_CONVENIENCE) {
             return CONDITIONALLY_UNAVAILABLE;
         } else {
-            return AVAILABLE;
+            return FaceUtils.isFaceUnlockSupported() ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
         }
     }
 }
