@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2019 The Android Open Source Project
+ * Copyright (C) 2022 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +24,7 @@ import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.slices.Sliceable;
 
+import java.lang.Math;
 import java.text.DecimalFormat;
 
 public class TotalRAMPreferenceController extends BasePreferenceController {
@@ -55,7 +57,7 @@ public class TotalRAMPreferenceController extends BasePreferenceController {
     @Override
     public void copy() {
         Sliceable.setCopyContent(mContext, getSummary(),
-                mContext.getText(R.string.total_ram));
+                mContext.getText(R.string.cipher_ram));
     }
 
     @Override
@@ -63,11 +65,20 @@ public class TotalRAMPreferenceController extends BasePreferenceController {
         ActivityManager actManager = (ActivityManager) mContext.getSystemService(Context.ACTIVITY_SERVICE);
         ActivityManager.MemoryInfo memInfo = new ActivityManager.MemoryInfo();
         actManager.getMemoryInfo(memInfo);
-        DecimalFormat ramDecimalForm = new DecimalFormat("#.#");
+        long avlRam = memInfo.availMem;
         long totRam = memInfo.totalMem;
-        double kb = (double)totRam / 1024.0;
-        double mb = (double)totRam / 1048576.0;
-        double gb = (double)totRam / 1073741824.0;
+        long usdRam = totRam - avlRam;
+        float ramPercentage = Math.round(100.0 * (double) usdRam / (double) totRam);
+        String ramTotString = calculateRam(totRam);
+        String ramUsdString = calculateRam(usdRam);
+        return ramUsdString + " / " + ramTotString + " (" + ramPercentage + "%)";
+    }
+
+    private String calculateRam(long ram) {
+        DecimalFormat ramDecimalForm = new DecimalFormat("#.#");
+        double kb = (double)ram / 1024.0;
+        double mb = (double)ram / 1048576.0;
+        double gb = (double)ram / 1073741824.0;
         String ramString = "";
         if (gb > 1) {
             ramString = ramDecimalForm.format(gb).concat(" GB");

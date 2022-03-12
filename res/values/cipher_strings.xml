@@ -149,6 +149,7 @@
     <string name="cipher_kernel">Kernel Version</string>
     <string name="cipher_maintainer">Maintainer</string>
     <string name="cipher_number">Build Number</string>
+    <string name="cipher_ram">RAM Usage</string>
     <string name="cipher_security">Android Security Update</string>
     <string name="cipher_serial">Serial Number</string>
     <string name="cipher_selinux">SELinux Status</string>
