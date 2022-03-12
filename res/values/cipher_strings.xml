@@ -133,4 +133,27 @@
     <string name="team_9">Shashwat &#40;shashwat2003&#41;</string>
     <string name="team9_description">Web Developer</string>
 
+    <!-- Homepage -->
+    <string name="cipher_homepage_connectivity">Connectivity</string>
+    <string name="cipher_homepage_device">Device</string>
+    <string name="cipher_homepage_security">Security</string>
+    <string name="cipher_homepage_customization">Customizations</string>
+    <string name="cipher_homepage_system">System</string>
+
+    <!-- About page -->
+    <string name="cipher_android">Android Version</string>
+    <string name="cipher_baseband">Baseband Version</string>
+    <string name="cipher_date">Build Date</string>
+    <string name="cipher_device">Device</string>
+    <string name="cipher_id">Build ID</string>
+    <string name="cipher_kernel">Kernel Version</string>
+    <string name="cipher_maintainer">Maintainer</string>
+    <string name="cipher_number">Build Number</string>
+    <string name="cipher_security">Android Security Update</string>
+    <string name="cipher_serial">Serial Number</string>
+    <string name="cipher_selinux">SELinux Status</string>
+    <string name="cipher_status">Status</string>
+    <string name="cipher_type">Build Type</string>
+    <string name="cipher_version">CipherOS Version</string>
+  
 </resources>

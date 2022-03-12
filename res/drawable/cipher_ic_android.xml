@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The CipherOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M19.80967,7.6557c-0.24241,0.0024 -0.4826,0.04747 -0.70997,0.13322l0,-0.13322c0.00009,-1.49229 -0.45496,-2.94762 -1.30208,-4.16443l1.80403,-1.83968l-1.0039,-1.02373l-1.73375,1.768c-2.72566,-2.63933 -7.00092,-2.63933 -9.72659,0l-1.73517,-1.768l-1.0039,1.02373l1.80403,1.83968c-0.84713,1.21681 -1.30217,2.67214 -1.30208,4.16443l0,0.13322c-0.22737,-0.08575 -0.46756,-0.13082 -0.70997,-0.13322c-1.17633,0 -2.12991,0.97242 -2.12991,2.17199l0,5.79197c0,1.19957 0.95358,2.17199 2.12991,2.17199c0.24241,-0.0024 0.4826,-0.04747 0.70997,-0.13322l0,1.58121l2.12991,0l0,4.34398l4.25982,0l0,-4.34398l1.41994,0l0,4.34398l4.25982,0l0,-4.34398l2.12991,0l0,-1.58121c0.22737,0.08575 0.46756,0.13082 0.70997,0.13322c1.17633,0 2.12991,-0.97242 2.12991,-2.17199l0,-5.79197c0,-1.19957 -0.95358,-2.17199 -2.12991,-2.17199zm-14.90937,7.96396c0,0.39987 -0.31784,0.724 -0.70997,0.724c-0.39213,0 -0.70997,-0.32412 -0.70997,-0.724l0,-5.79197c0,-0.39987 0.31784,-0.724 0.70997,-0.724c0.39213,0 0.70997,0.32412 0.70997,0.724l0,5.79197zm4.96979,6.51597l-1.41994,0l0,-2.89599l1.41994,0l0,2.89599zm5.67976,0l-1.41994,0l0,-2.89599l1.41994,0l0,2.89599zm2.12991,-4.34398l-11.35952,0l0,-8.68796l11.35952,0l0,8.68796zm-11.35952,-10.13595c0,-3.1988 2.54293,-5.79197 5.67976,-5.79197c3.13682,0 5.67976,2.59318 5.67976,5.79197l-11.35952,0zm14.1994,7.96396c0,0.39987 -0.31784,0.724 -0.70997,0.724c-0.39213,0 -0.70997,-0.32412 -0.70997,-0.724l0,-5.79197c0,-0.39987 0.31784,-0.724 0.70997,-0.724c0.39213,0 0.70997,0.32412 0.70997,0.724l0,5.79197z" />
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M9.16012,4.75972l1.41994,0l0,1.44799l-1.41994,0l0,-1.44799z" />
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M13.41994,4.75972l1.41994,0l0,1.44799l-1.41994,0l0,-1.44799z" />
+</vector>

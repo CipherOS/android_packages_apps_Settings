@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The CipherOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M11.99241,11.96868c3.06944,0 5.48114,-2.52974 5.48114,-5.7494c0,-3.21967 -2.4117,-5.7494 -5.48114,-5.7494c-3.06944,0 -5.48114,2.52974 -5.48114,5.7494c0,3.21967 2.4117,5.7494 5.48114,5.7494zm0,-9.19905c1.86359,0 3.28868,1.49484 3.28868,3.44964c0,1.9548 -1.4251,3.44964 -3.28868,3.44964c-1.86359,0 -3.28868,-1.60983 -3.28868,-3.44964c0,-1.83981 1.4251,-3.44964 3.28868,-3.44964z" />
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M18.24091,12.31365c-0.43849,-0.45995 -1.09623,-0.45995 -1.53472,0c-2.63095,2.64473 -6.79661,2.64473 -9.42756,0c-0.43849,-0.45995 -1.09623,-0.45995 -1.53472,0c-0.43849,0.45995 -0.43849,1.14988 0,1.60983c1.53472,1.49484 3.39831,2.29976 5.37152,2.52974l-4.27529,5.05948c-0.43849,0.45995 -0.32887,1.14988 0.10962,1.60983c0.43849,0.45995 1.09623,0.34496 1.53472,-0.11499l3.50793,-4.13957l3.61755,4.25456c0.65774,0.68993 1.31547,0.34496 1.53472,0.11499c0.43849,-0.45995 0.54811,-1.14988 0.10962,-1.60983l-4.27529,-5.05948c1.97321,-0.22998 3.8368,-1.03489 5.37152,-2.52974c0.32887,-0.57494 0.32887,-1.26487 -0.10962,-1.72482z" />
+</vector>

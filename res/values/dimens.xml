@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2009 The Android Open Source Project
+     Copyright (C) 2022 The CipherOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -131,6 +132,8 @@
     <dimen name="search_bar_text_size">20sp</dimen>
     <dimen name="search_bar_corner_radius">28dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
+    <dimen name="search_bar_avatar_end_padding">20dp</dimen>
+    <dimen name="search_bar_avatar_top_bottom_padding">8dp</dimen>
 
     <!-- Avatar -->
     <dimen name="avatar_length">48dp</dimen>

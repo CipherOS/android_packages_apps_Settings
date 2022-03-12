@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The CipherOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M2.30541,11.94302c0,-5.3132 4.14027,-9.62014 9.24787,-9.62014c5.1076,0 9.24787,4.30693 9.24787,9.62014c0,0.29534 -0.01295,0.58779 -0.03792,0.87543c-0.04531,0.52911 0.32922,0.99665 0.83786,1.04475c0.50956,0.0481 0.959,-0.34248 1.00432,-0.87158c0.02959,-0.34536 0.04531,-0.69554 0.04531,-1.04859c0,-6.37526 -4.96888,-11.54416 -11.09744,-11.54416c-6.12856,0 -11.09744,5.1689 -11.09744,11.54416c0,6.37526 4.96888,11.54416 11.09744,11.54416c1.42232,0 2.78361,-0.27898 4.03577,-0.78693c0.47534,-0.19336 0.71024,-0.75133 0.52435,-1.24677c-0.18496,-0.49447 -0.72133,-0.73883 -1.1976,-0.54546c-1.04039,0.42232 -2.17417,0.65513 -3.36252,0.65513c-5.1076,0 -9.24787,-4.30693 -9.24787,-9.62014zm15.72138,6.7341c0,-1.06303 0.82768,-1.92403 1.84957,-1.92403c1.02189,0 1.84957,0.861 1.84957,1.92403c0,1.06303 -0.82768,1.92403 -1.84957,1.92403c-1.02189,0 -1.84957,-0.861 -1.84957,-1.92403zm1.84957,-3.84805c-2.04285,0 -3.69915,1.72297 -3.69915,3.84805c0,2.12509 1.65629,3.84805 3.69915,3.84805c2.04285,0 3.69915,-1.72297 3.69915,-3.84805c0,-2.12509 -1.65629,-3.84805 -3.69915,-3.84805z" />
+</vector>

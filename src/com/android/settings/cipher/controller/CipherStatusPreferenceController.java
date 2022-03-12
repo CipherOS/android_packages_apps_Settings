@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.deviceinfo.firmwareversion;
+package com.android.settings.cipher.controller;
 
 import android.content.Context;
 import android.os.SystemProperties;
@@ -25,12 +25,12 @@ import androidx.preference.Preference;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class CipherVersionPreferenceController extends BasePreferenceController {
+public class CipherStatusPreferenceController extends BasePreferenceController {
 
-    private static final String TAG = "CipherVersionPreferenceController";
-    private static final String ROM_PROPERTY = "ro.cipher.version";
+    private static final String TAG = "CipherStatusPreferenceController";
+    private static final String STATUS_PROPERTY = "ro.cipher.status";
 
-    public CipherVersionPreferenceController(Context context, String key) {
+    public CipherStatusPreferenceController(Context context, String key) {
         super(context, key);
     }
 
@@ -39,8 +39,9 @@ public class CipherVersionPreferenceController extends BasePreferenceController 
     }
 
     public CharSequence getSummary() {
-        String rom = SystemProperties.get(ROM_PROPERTY,
+        String status = SystemProperties.get(STATUS_PROPERTY,
                 this.mContext.getString(R.string.device_info_default));
-        return rom;
+        status = status.substring(0, 1).toUpperCase() + status.substring(1).toLowerCase();
+        return status;
     }
 }

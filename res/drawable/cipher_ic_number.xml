@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The CipherOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M21.54958,5.49157l-2.46232,0l0.48042,-2.64253a1.46917,1.44955 0 0 0 -2.89132,-0.51314l-0.57444,3.15567l-6.31741,0l0.48042,-2.64253a1.46917,1.44955 0 1 0 -2.89132,-0.51314l-0.57738,3.15567l-2.87663,0a1.46917,1.44955 0 0 0 0,2.8991l2.35067,0l-1.32225,7.24775l-2.49758,0a1.46917,1.44955 0 0 0 0,2.8991l1.97309,0l-0.48042,2.64253a1.46917,1.44955 0 0 0 1.18562,1.68293a1.44272,1.42346 0 0 0 0.26004,0.02319a1.46917,1.44955 0 0 0 1.44419,-1.19298l0.57591,-3.15567l6.31741,0l-0.48042,2.64253a1.46917,1.44955 0 0 0 1.18562,1.68293a1.44272,1.42346 0 0 0 0.26151,0.02319a1.46917,1.44955 0 0 0 1.44419,-1.19298l0.57591,-3.15567l3.36733,0a1.46917,1.44955 0 0 0 0,-2.8991l-2.8399,0l1.32225,-7.24775l2.98681,0a1.46917,1.44955 0 0 0 0,-2.8991zm-7.29441,10.14685l-6.31741,0l1.32225,-7.24775l6.31741,0l-1.32225,7.24775z" />
+</vector>

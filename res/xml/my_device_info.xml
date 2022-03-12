@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2022 The CipherOS Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -21,195 +22,161 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <!-- About us -->
     <Preference
-        android:key="cipher_about_info"
-        android:order="-1"
-        android:title="@string/cipher_about_info"
-        android:summary="@string/cipher_about_summary"
-        android:fragment="com.android.settings.cipher.fragments.AboutUs" />
+        android:key="cipher_version"
+        android:order="0"
+        android:title="@string/cipher_version"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.cipher.fragments.AboutUs"
+        settings:controller="com.android.settings.cipher.controller.CipherVersionPreferenceController"
+        settings:layout="@layout/cipher_logo_top"/>
 
-    <PreferenceCategory
-        android:key="basic_info_category"
+    <Preference
+        android:key="cipher_status"
+        android:order="10"
+        android:title="@string/cipher_status"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.cipher.fragments.AboutUs"
+        settings:controller="com.android.settings.cipher.controller.CipherStatusPreferenceController"
+        settings:layout="@layout/cipher_logo_middle"/>
+
+    <Preference
+        android:key="cipher_maintainer"
+        android:order="20"
+        android:title="@string/cipher_maintainer"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.cipher.fragments.AboutUs"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CipherMaintainerPreferenceController"
+        settings:layout="@layout/cipher_logo_bottom"/>
+
+    <Preference
+        android:key="cipher_pref_dummy"
+        android:order="30"
         android:selectable="false"
-        android:title="@string/my_device_info_basic_info_category_title">
+        settings:layout="@layout/cipher_pref_dummy"/>
 
-        <!-- Device name -->
-        <com.android.settings.widget.ValidatedEditTextPreference
-            android:key="device_name"
-            android:order="1"
-            android:title="@string/my_device_info_device_name_preference_title"
-            android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-            settings:enableCopying="true"/>
+    <com.android.settings.widget.ValidatedEditTextPreference
+        android:key="device_name"
+        android:icon="@drawable/cipher_ic_device"
+        android:order="40"
+        android:title="@string/cipher_device"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
+        settings:enableCopying="true"
+        settings:layout="@layout/cipher_card_grey_top"/>
 
-        <!-- Account name -->
-        <Preference
-            android:key="branded_account"
-            android:order="2"
-            android:title="@string/my_device_info_account_preference_title"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
+    <Preference
+        android:key="firmware_version"
+        android:icon="@drawable/cipher_ic_android"
+        android:order="50"
+        android:title="@string/cipher_android"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-        <!-- Phone number -->
-        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
-            android:key="phone_number"
-            android:order="3"
-            android:title="@string/status_number"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
-            settings:enableCopying="true"/>
-    </PreferenceCategory>
+    <Preference
+        android:key="security_key"
+        android:icon="@drawable/cipher_ic_patch"
+        android:order="60"
+        android:title="@string/cipher_security"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-    <PreferenceCategory
-        android:title="@string/my_device_info_legal_category_title">
+    <Preference
+        android:key="base_band"
+        android:icon="@drawable/cipher_ic_baseband"
+        android:order="70"
+        android:title="@string/cipher_baseband"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-        <!-- Legal information -->
-        <Preference
-            android:key="legal_container"
-            android:order="15"
-            android:title="@string/legal_information"
-            android:fragment="com.android.settings.LegalSettings"/>
+    <Preference
+        android:key="kernel_version"
+        android:icon="@drawable/cipher_ic_kernel"
+        android:order="80"
+        android:title="@string/cipher_kernel"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-        <!-- Regulatory labels -->
-        <Preference
-            android:key="regulatory_info"
-            android:order="16"
-            android:title="@string/regulatory_labels">
-            <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
-        </Preference>
+    <Preference
+        android:key="selinux_status"
+        android:icon="@drawable/cipher_ic_selinux"
+        android:order="90"
+        android:title="@string/cipher_selinux"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SelinuxStatusPreferenceController"
+        settings:layout="@layout/cipher_card_grey_bottom"/>
 
-        <!-- Safety & regulatory manual -->
-        <Preference
-            android:key="safety_info"
-            android:order="17"
-            android:title="@string/safety_and_regulatory_info"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="device_detail_category"
+    <Preference
+        android:key="cipher_pref_dummy"
+        android:order="100"
         android:selectable="false"
-        android:title="@string/my_device_info_device_details_category_title">
+        settings:layout="@layout/cipher_pref_dummy"/>
 
-        <!-- SIM status -->
-        <Preference
-            android:key="sim_status"
-            android:order="18"
-            android:title="@string/sim_status_title"
-            settings:keywords="@string/keywords_sim_status"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"/>
+    <Preference
+        android:key="hardware_info_platform"
+        android:icon="@drawable/cipher_ic_platform"
+        android:order="110"
+        android:title="@string/platform_revision"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.PlatformRevisionPreferenceController"
+        settings:layout="@layout/cipher_card_grey_top"/>
 
-        <!-- Model & hardware -->
-        <Preference
-            android:key="device_model"
-            android:order="31"
-            android:title="@string/model_info"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-            settings:enableCopying="true"
-            settings:keywords="@string/keywords_model_and_hardware"
-            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
+    <Preference
+        android:key="hardware_info_ram"
+        android:icon="@drawable/cipher_ic_ram"
+        android:order="120"
+        android:title="@string/total_ram"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.TotalRAMPreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-        <!-- IMEI -->
-        <com.android.settings.deviceinfo.PhoneNumberSummaryPreference
-            android:key="imei_info"
-            android:order="32"
-            android:title="@string/status_imei"
-            android:summary="@string/summary_placeholder"
-            settings:keywords="@string/keywords_imei_info"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
+    <Preference
+        android:key="hardware_info_device_serial"
+        android:icon="@drawable/cipher_ic_serial"
+        android:order="130"
+        android:title="@string/cipher_serial"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.SerialNumberPreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-        <!-- Android version -->
-        <Preference
-            android:key="firmware_version"
-            android:order="42"
-            android:title="@string/firmware_version"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
-    </PreferenceCategory>
+    <Preference
+        android:key="cipher_type"
+        android:icon="@drawable/cipher_ic_type"
+        android:order="140"
+        android:title="@string/cipher_type"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.cipher.controller.CipherBuildTypePreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-    <PreferenceCategory
-        android:title="@string/my_device_info_device_identifiers_category_title">
+    <Preference
+        android:key="cipher_date"
+        android:icon="@drawable/cipher_ic_date"
+        android:order="150"
+        android:title="@string/cipher_date"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.cipher.controller.CipherBuildDatePreferenceController"
+        settings:layout="@layout/cipher_card_grey_middle"/>
 
-        <!--IP address -->
-        <Preference
-            android:key="wifi_ip_address"
-            android:order="44"
-            android:title="@string/wifi_ip_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
+    <Preference
+        android:key="build_number"
+        android:icon="@drawable/cipher_ic_number"
+        android:order="160"
+        android:title="@string/cipher_id"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"
+        settings:layout="@layout/cipher_card_grey_bottom"/>
 
-        <!-- Wi-Fi MAC address -->
-        <Preference
-            android:key="saved_accesspoints_wifi_mac_address"
-            android:order="45"
-            android:title="@string/status_wifi_mac_address"
-            android:summary="@string/view_saved_network"
-            android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
-            settings:enableCopying="false"/>
-
-        <!-- Factory Wi-Fi MAC address -->
-        <Preference
-            android:key="wifi_mac_address"
-            android:order="46"
-            android:title="@string/status_device_wifi_mac_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
-
-        <!-- Bluetooth address -->
-        <Preference
-            android:key="bt_address"
-            android:order="47"
-            android:title="@string/status_bt_address"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"
-            settings:enableCopying="true"/>
-
-        <!-- Device up time -->
-        <Preference
-            android:key="up_time"
-            android:order="48"
-            android:title="@string/status_up_time"
-            android:summary="@string/summary_placeholder"
-            android:selectable="false"/>
-
-        <!-- Manual -->
-        <Preference
-            android:key="manual"
-            android:order="50"
-            android:title="@string/manual">
-            <intent android:action="android.settings.SHOW_MANUAL"/>
-        </Preference>
-
-        <!-- Feedback on the device -->
-        <Preference
-            android:key="device_feedback"
-            android:order="51"
-            android:title="@string/device_feedback"
-            settings:keywords="@string/keywords_device_feedback"/>
-
-        <!-- Device FCC equipment id -->
-        <Preference
-            android:key="fcc_equipment_id"
-            android:order="52"
-            android:title="@string/fcc_equipment_id"
-            android:summary="@string/summary_placeholder"/>
-
-        <!-- Build number -->
-        <Preference
-            android:key="build_number"
-            android:order="53"
-            android:title="@string/build_number"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
-            settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
-    </PreferenceCategory>
+    <Preference
+        android:key="cipher_pref_dummy"
+        android:order="170"
+        android:selectable="false"
+        settings:layout="@layout/cipher_pref_dummy"/>
 
 </PreferenceScreen>

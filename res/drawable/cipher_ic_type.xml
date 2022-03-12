@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The CipherOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M16.01606,1.7458l0,-1.36723l-8.03211,0l0,1.36723l-4.01606,0l0,21.87562l16.06422,0l0,-21.87562l-4.01606,0zm-6.69343,0l5.35474,0l0,1.36723l-5.35474,0l0,-1.36723zm9.3708,20.50839l-13.38685,0l0,-19.14117l2.67737,0l0,1.36723l8.03211,0l0,-1.36723l2.67737,0l0,19.14117z" />
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M7.3146,13.36723l9.37084,0l0,1.36723l-9.37084,0l0,-1.36723z" />
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M7.3146,16.10168l9.37084,0l0,1.36723l-9.37084,0l0,-1.36723z" />
+    <path
+        android:fillColor="#000000"
+        android:fillType="evenOdd"
+        android:pathData="M7.3146,18.83613l9.37084,0l0,1.36723l-9.37084,0l0,-1.36723z" />
+</vector>

@@ -18,6 +18,7 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/cipher_about_info">
 
 <PreferenceCategory
@@ -34,7 +35,8 @@
     <Preference
         android:title="@string/github"
         android:summary="@string/github_description"
-        android:icon="@drawable/ic_github" >
+        android:icon="@drawable/ic_github"
+        settings:layout="@layout/cipher_card_accent_top">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="http://github.com/CipherOS" />
@@ -43,7 +45,8 @@
     <Preference
         android:title="@string/telegram"
         android:summary="@string/telegram_description"
-        android:icon="@drawable/ic_telegram" >
+        android:icon="@drawable/ic_telegram"
+        settings:layout="@layout/cipher_card_accent_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="http://telegram.me/CipherOS_Chat" />
@@ -52,7 +55,8 @@
     <Preference
         android:title="@string/web"
         android:summary="@string/web_description"
-        android:icon="@drawable/ic_web" >
+        android:icon="@drawable/ic_web"
+        settings:layout="@layout/cipher_card_accent_bottom">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://sourceforge.net/projects/cipheros/files/" />
@@ -67,7 +71,8 @@
     <Preference
         android:title="@string/team_1"
         android:summary="@string/team1_description"
-        android:icon="@drawable/ic_devs" >
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_top">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/techyminati" />
@@ -76,7 +81,8 @@
     <Preference
         android:title="@string/team_2"
         android:summary="@string/team2_description"
-        android:icon="@drawable/ic_devs" >
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/CyberJalagam" />
@@ -85,7 +91,8 @@
     <Preference
         android:title="@string/team_3"
         android:summary="@string/team3_description"
-        android:icon="@drawable/ic_devs" >
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/alibei" />
@@ -94,7 +101,8 @@
     <Preference
         android:title="@string/team_4"
         android:summary="@string/team4_description"
-        android:icon="@drawable/ic_devs">
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/rain2wood" />
@@ -103,7 +111,8 @@
      <Preference
         android:title="@string/team_5"
         android:summary="@string/team5_description"
-        android:icon="@drawable/ic_devs">
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/kardebayan" />
@@ -112,7 +121,8 @@
     <Preference
         android:title="@string/team_6"
         android:summary="@string/team6_description"
-        android:icon="@drawable/ic_devs">
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/sarthakroy2002" />
@@ -121,7 +131,8 @@
      <Preference
         android:title="@string/team_7"
         android:summary="@string/team7_description"
-        android:icon="@drawable/ic_devs">
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/DhruvChhura" />
@@ -130,7 +141,8 @@
      <Preference
         android:title="@string/team_8"
         android:summary="@string/team8_description"
-        android:icon="@drawable/ic_devs">
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_middle">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/resist15" />
@@ -139,11 +151,17 @@
      <Preference
         android:title="@string/team_9"
         android:summary="@string/team9_description"
-        android:icon="@drawable/ic_devs">
+        android:icon="@drawable/ic_devs"
+        settings:layout="@layout/cipher_card_grey_bottom">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/shashwat2003" />
      </Preference>
+
+     <Preference
+        android:key="cipher_pref_dummy"
+        android:selectable="false"
+        settings:layout="@layout/cipher_pref_dummy"/>
 
 </PreferenceCategory>
 

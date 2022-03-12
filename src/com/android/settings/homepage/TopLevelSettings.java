@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018 The Android Open Source Project
+ * Copyright (C) 2022 The CipherOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,7 +42,6 @@ import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.support.SupportPreferenceController;
 import com.android.settings.widget.HomepagePreference;
 import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
@@ -85,7 +85,6 @@ public class TopLevelSettings extends DashboardFragment implements
     public void onAttach(Context context) {
         super.onAttach(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
-        use(SupportPreferenceController.class).setActivity(getActivity());
     }
 
     @Override
@@ -186,6 +185,10 @@ public class TopLevelSettings extends DashboardFragment implements
             final Drawable icon = preference.getIcon();
             if (icon != null) {
                 icon.setTint(tintColor);
+            }
+            // Override wallpaper layout
+            if ("top_level_wallpaper".equals(preference.getKey())){
+                preference.setLayoutResource(R.layout.cipher_card_accent_middle);
             }
         }
     }
