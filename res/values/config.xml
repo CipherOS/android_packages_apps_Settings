@@ -304,7 +304,7 @@
     <bool name="config_show_regulatory_info">false</bool>
 
     <!-- Whether to show a preference item for mobile plan -->
-    <bool name="config_show_mobile_plan">true</bool>
+    <bool name="config_show_mobile_plan">false</bool>
 
     <!-- Whether none security option is hide or not  (country specific). -->
     <bool name="config_hide_none_security_option">false</bool>
