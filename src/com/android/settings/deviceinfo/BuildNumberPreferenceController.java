@@ -72,22 +72,22 @@ public class BuildNumberPreferenceController extends BasePreferenceController im
     private boolean mProcessingLastDevHit;
 
     public final static java.lang.String[] insults = {
-            "Hahaha, n00b!",
-            "What are you doing??",
-            "n00b alert!",
-            "What is this...? Amateur hour!?",
-            "This is not Windows",
-            "Please step away from the device!",
-            "error code: 1D10T",
-            "Go outside",
-            "¯\\_(ツ)_/¯",
-            "Pro tip: Stop doing this!",
-            "Y u no speak computer???",
-            "Why are you so stupid?!",
-            "Perhaps this Android thing is not for you...",
-            "Don't you have anything better to do?!",
-            "This is why nobody likes you...",
-            "Are you even trying?!",};
+            "It’s not who I am underneath, but what I do that defines me.",
+            "The night is darkest just before the dawn. And I promise you, the dawn is coming.",
+            "A hero can be anyone, even a man doing something as simple and reassuring as putting a coat on a young boy's shoulders to let him know that the world hadn't ended.",
+            "Mystery Remains!",
+            "Sometimes it's only madness that makes us what we are.",
+            "Everything's impossible until somebody does it.",
+            "Welcome to CipherOS",
+            "Keep Clicking & Maybe there's something underneath.",
+            "Do you know? Cipher stands for a encrypted code or message.",
+            "Thank you for choosing us!",
+            "The world only makes sense if you force it to.",
+            "Did you find Cipher Easter Egg yet?",
+            "If we can’t accept limitations we’re no better than the bad guys.",
+            "There are people who say progress is dangerous, but none of those idiots ever had to live with a chest full of shrapnel.",
+            "It's not about how much we lost. It's about how much we have left.",
+            "Oh! Did you check for updates today?",};
 
     public BuildNumberPreferenceController(Context context, String key) {
         super(context, key);
