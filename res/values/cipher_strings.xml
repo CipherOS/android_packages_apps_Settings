@@ -156,5 +156,7 @@
     <string name="cipher_status">Status</string>
     <string name="cipher_type">Build Type</string>
     <string name="cipher_version">CipherOS Version</string>
-  
+
+    <!-- Auto Rotate String -->
+    <string name="auto_rotate_settings_primary_switch_summary">Rotate your screen when you move your device between portrait and landscape</string>
 </resources>
