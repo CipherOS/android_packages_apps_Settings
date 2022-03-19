@@ -35,8 +35,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="12dp"
-                android:paddingRight="12dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
                 android:id="@android:id/icon"/>
 
         </LinearLayout>
