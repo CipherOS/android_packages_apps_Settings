@@ -17,69 +17,69 @@
 <resources>
 
     <!-- Face Unlock -->
-    <string name="security_settings_face_settings_footer_custom">Face unlock lets you unlock your device by looking at it. Keep in mind:\n\n● Your device may unlock any time you look at it.\n● Your device can be unlocked by someone else if they hold it in front of your face while your eyes are open.\n● Your device may also be unlocked by someone who looks a lot like you, such as a child or identical sibling.</string>
-    <string name="security_settings_face_settings_remove_dialog_details_custom">Data recorded by face unlock will be permanently and securely deleted. After removal, you will need your PIN, pattern, or password to unlock your phone.</string>
-    <string name="security_settings_face_unlock_redo_face_scan_summary">Remove existing face scan and create a new scan</string>
-    <string name="security_settings_face_unlock_redo_face_scan_title">Redo face scan</string>
-    <string name="face_redo_confirm_btn">Redo</string>
-    <string name="face_redo_warning_msg">Do you want to remove the existing face scan and create a new one?</string>
-    <string name="face_unlock_method_title">Allow face unlock on lock screen</string>
-    <string name="face_unlock_method_default">When the screen is turned on</string>
-    <string name="face_unlock_method_swipe">When swiping on lock screen</string>
+    <string name="security_settings_face_settings_footer_custom">Buka kunci wajah memungkinkan Anda membuka kunci perangkat dengan melihatnya. Ingatlah:\n\n● Perangkat Anda dapat terbuka kuncinya kapan pun Anda melihatnya.\n● Perangkat Anda dapat dibuka kuncinya oleh orang lain jika mereka memegangnya di depan wajah Anda saat mata Anda terbuka.\n● Perangkat Anda  perangkat juga dapat dibuka kuncinya oleh seseorang yang sangat mirip dengan Anda, seperti anak kecil atau saudara kandung yang identik.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_custom">Data yang direkam dengan face unlock akan dihapus secara permanen dan aman. Setelah dihapus, Anda memerlukan PIN, pola, atau kata sandi untuk membuka kunci ponsel Anda.</string>
+    <string name="security_settings_face_unlock_redo_face_scan_summary">Hapus pemindaian wajah yang ada dan buat pemindaian baru</string>
+    <string name="security_settings_face_unlock_redo_face_scan_title">Ulangi pemindaian wajah</string>
+    <string name="face_redo_confirm_btn">Ulangi</string>
+    <string name="face_redo_warning_msg">Apakah Anda ingin menghapus pemindaian wajah yang ada dan membuat pemindaian baru?</string>
+    <string name="face_unlock_method_title">Izinkan face unlock di layar kunci</string>
+    <string name="face_unlock_method_default">Saat layar dihidupkan</string>
+    <string name="face_unlock_method_swipe">Saat mengusap layar kunci</string>
 
     <!-- SELinux Status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Dinonaktifkan</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
 
     <!-- Three-fingers-swipe to screenshot -->
-    <string name="three_finger_gesture">Swipe to screenshot</string>
-    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+    <string name="three_finger_gesture">Gesek untuk tangkapan layar</string>
+    <string name="three_finger_gesture_summary">Gesek tiga jari ke bawah untuk tangkapan layar</string>
 
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Screen refresh rate</string>
-    <string name="min_refresh_rate_title">Minimum refresh rate</string>
-    <string name="max_refresh_rate_title">Maximum refresh rate</string>
+    <string name="min_refresh_rate_title">Kecepatan refresh minimum</string>
+    <string name="max_refresh_rate_title">Kecepatan refresh maksimum</string>
 
     <!-- Notification log -->
-    <string name="notification_log_summary">Show notifications history log</string>
+    <string name="notification_log_summary">Tampilkan log histori notifikasi</string>
 
     <!-- Density category -->
-    <string name="density_category">Density options</string>
+    <string name="density_category">Pilihan Kepadatan</string>
 
     <!-- Hardware info -->
     <!-- Label for device's hardware platform value [CHAR LIMIT=40] -->
     <string name="platform_revision">Platform</string>
 
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
-    <string name="total_ram">Total available RAM</string>
+    <string name="total_ram">Total RAM tersedia</string>
 
     <!-- Cipher maintainer -->
-    <string name="maintainer">Maintainer</string>
+    <string name="maintainer">Pengelola</string>
 
     <!-- Screenshot shutter -->
-    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+    <string name="screenshot_shutter_sound_title">Suara tangkapan layar</string>
 
     <!-- Statusbar net monitor -->
-    <string name="traffic_title">Traffic indicators</string>
-    <string name="network_traffic_state_summary">Show net activity in statusbar</string>
-    <string name="network_traffic">Network traffic</string>
-    <string name="network_traffic_state_title">Network traffic display</string>
-    <string name="network_traffic_location">Traffic indicator placement</string>
-    <string name="traffic_disabled">Disabled</string>
-    <string name="traffic_statusbar">Statusbar</string>
-    <string name="traffic_expanded_statusbar">Expanded header</string>
-    <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold (KB/s)</string>
-    <string name="network_traffic_arrow">Show arrows</string>
-    <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
-    <string name="network_traffic_type">Select net activity type</string>
-    <string name="show_network_traffic_combined">Combined (Upload + Download)</string>
-    <string name="show_network_traffic_dynamic">Dynamic</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Both</string>
-    <string name="nettraf_font_size">Single net font size</string>
+    <string name="traffic_title">Indikator jaringan</string>
+    <string name="network_traffic_state_summary">Tampilkan indikator jaringan di bilah status</string>
+    <string name="network_traffic">Lalu lintas jaringan</string>
+    <string name="network_traffic_state_title">Tampilan lalu lintas jaringan</string>
+    <string name="network_traffic_location">Lokasi indikator jaringan</string>
+    <string name="traffic_disabled">Dinonaktifkan</string>
+    <string name="traffic_statusbar">Bilah status</string>
+    <string name="traffic_expanded_statusbar">Header diperluas</string>
+    <string name="network_traffic_autohide_threshold_title">Ambang batas sembunyikan indikator jaringan (KB/d)</string>
+    <string name="network_traffic_arrow">Tampilkan panah</string>
+    <string name="network_traffic_arrow_summary">Tampilkan panah pada indikator jaringan</string>
+    <string name="network_traffic_type">Pilih tipe aktivitas jaringan</string>
+    <string name="show_network_traffic_combined">Kombinasi (Unggah + Unduh)</string>
+    <string name="show_network_traffic_dynamic">Dinamis</string>
+    <string name="show_network_traffic_up">Unggah</string>
+    <string name="show_network_traffic_down">Unduh</string>
+    <string name="show_network_traffic_all">Keduanya</string>
+    <string name="nettraf_font_size">Ukuran font jaringan</string>
 
     <!-- Show VoLTE icon on statusbar -->
     <string name="volte_icon_title">VoLTE icon</string>
@@ -93,68 +93,68 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
 
     <!-- Status bar battery style-->
-    <string name="status_bar_battery_style_title">Battery style</string>
-    <string name="battery_style_summary">Customize battery icons, hide or show percentage</string>
-    <string name="status_bar_battery_style_port">Portrait</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Dotted сircle</string>
-    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_title">Gaya baterai</string>
+    <string name="battery_style_summary">Sesuaikan gaya baterai, tampilkan atau sembunyikan persentase</string>
+    <string name="status_bar_battery_style_port">Potret</string>
+    <string name="status_bar_battery_style_circle">Lingkaran</string>
+    <string name="status_bar_battery_style_dotted_circle">Lingkaran putus-putus</string>
+    <string name="status_bar_battery_style_text">Teks</string>
     
     <!-- About CipherOS -->
-    <string name="cipher_about_info">About us</string>
-    <string name="cipher_about_summary">Our introduction and our team</string>
-    <string name="cipher_about_info_summary">CipherOS is a Android Custom OS, Based On AOSP, Striving to Provide its Users, A Clean, Bloat free &#38; Sturdy Experience with Minimal Customisation!</string>
-    <string name="dev_info">About CipherOS</string>
+    <string name="cipher_about_info">Tentang kami</string>
+    <string name="cipher_about_summary">Perkenalan kami dan tim kami</string>
+    <string name="cipher_about_info_summary">CipherOS adalah OS Kustom Android, berdasarkan AOSP, berusaha untuk memberikan penggunanya pengalaman yang bersih, bebas bloatware, dan kokoh dengan kustomisasi minimal!</string>
+    <string name="dev_info">Tentang CipherOS</string>
     <string name="github">Github</string>
-    <string name="github_description">View our source code</string>
+    <string name="github_description">Lihat kode sumber kami</string>
     <string name="telegram">Telegram</string>
-    <string name="telegram_description">Subscribe to our Telegram channel</string>
-    <string name="web">Download Center</string>
-    <string name="web_description">Visit our download portal</string>
+    <string name="telegram_description">Gabung dengan saluran Telegram kami</string>
+    <string name="web">Pusat Unduhan</string>
+    <string name="web_description">Kunjungi situs unduhan kami</string>
 
      <!-- CipherOS Team-->
-    <string name="leads">Team Leads</string>
+    <string name="leads">Tim Utama</string>
     <string name="team_1">Aryan Sinha &#40;techyminati&#41;</string>
-    <string name="team1_description">Founder &#38; Lead Developer</string>
+    <string name="team1_description">Pendiri &#38; Pengembang Utama</string>
     <string name="team_2">Jaishnav Prasad &#40;CyberJalagam&#41;</string>
-    <string name="team2_description">Co-Founder &#38; Core Developer</string>
+    <string name="team2_description">Pendiri &#38; Pengembang Inti</string>
     <string name="team_3">Sebastian Kotzias &#40;alibei&#41;</string>
-    <string name="team3_description">UI/UX Lead &#38; Core Developer</string>
+    <string name="team3_description">Pengembang UI/UX&#38; Pengembang Inti</string>
     <string name="team_4">Wiley Lau &#40;rain2wood&#41;</string>
-    <string name="team4_description">UI/UX Co-Lead &#38; Maintainer Affairs</string>
+    <string name="team4_description">Pengembang UI/UX &#38; Pengelola Urusan</string>
     <string name="team_5">Debayan Kar &#40;kardebayan&#41;</string>
-    <string name="team5_description">Developer</string>
+    <string name="team5_description">Pengembang</string>
     <string name="team_6">Sarthak Roy &#40;sarthakroy2002&#41;</string>
-    <string name="team6_description">Developer</string>
+    <string name="team6_description">Pengembang</string>
     <string name="team_7">Dhruv Chhura &#40;DhruvChhura&#41;</string>
-    <string name="team7_description">Developer</string>
+    <string name="team7_description">Pengembang</string>
     <string name="team_8">Sourav Jagtap &#40;resist15&#41;</string>
-    <string name="team8_description">Developer</string>
+    <string name="team8_description">Pengembang</string>
     <string name="team_9">Shashwat &#40;shashwat2003&#41;</string>
-    <string name="team9_description">Web Developer</string>
+    <string name="team9_description">Pengembang Web</string>
 
     <!-- Homepage -->
-    <string name="cipher_homepage_connectivity">Connectivity</string>
-    <string name="cipher_homepage_device">Device</string>
-    <string name="cipher_homepage_security">Security</string>
-    <string name="cipher_homepage_customization">Customizations</string>
-    <string name="cipher_homepage_system">System</string>
+    <string name="cipher_homepage_connectivity">Konektivitas</string>
+    <string name="cipher_homepage_device">Perangkat</string>
+    <string name="cipher_homepage_security">Keamanan</string>
+    <string name="cipher_homepage_customization">Kustomisasi</string>
+    <string name="cipher_homepage_system">Sistem</string>
 
     <!-- About page -->
-    <string name="cipher_android">Android Version</string>
-    <string name="cipher_baseband">Baseband Version</string>
-    <string name="cipher_date">Build Date</string>
-    <string name="cipher_device">Device</string>
+    <string name="cipher_android">Versi Android</string>
+    <string name="cipher_baseband">Versi pita basis</string>
+    <string name="cipher_date">Tanggal pembuatan</string>
+    <string name="cipher_device">Perangkat</string>
     <string name="cipher_id">Build ID</string>
-    <string name="cipher_kernel">Kernel Version</string>
-    <string name="cipher_maintainer">Maintainer</string>
-    <string name="cipher_number">Build Number</string>
-    <string name="cipher_ram">RAM Usage</string>
-    <string name="cipher_security">Android Security Update</string>
-    <string name="cipher_serial">Serial Number</string>
-    <string name="cipher_selinux">SELinux Status</string>
+    <string name="cipher_kernel">Versi kernel</string>
+    <string name="cipher_maintainer">Pengelola</string>
+    <string name="cipher_number">Nomor build</string>
+    <string name="cipher_ram">Penggunaan RAM</string>
+    <string name="cipher_security">Update keamanan Android</string>
+    <string name="cipher_serial">Nomor serial</string>
+    <string name="cipher_selinux">Status SELinux</string>
     <string name="cipher_status">Status</string>
-    <string name="cipher_type">Build Type</string>
-    <string name="cipher_version">CipherOS Version</string>
+    <string name="cipher_type">Tipe Build</string>
+    <string name="cipher_version">Versi CipherOS</string>
   
 </resources>
