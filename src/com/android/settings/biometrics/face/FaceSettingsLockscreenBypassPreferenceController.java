@@ -87,8 +87,7 @@ public class FaceSettingsLockscreenBypassPreferenceController
             return UNSUPPORTED_ON_DEVICE;
         }
 
-        boolean faceAuthOnlyOnSecurityView  = mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_faceAuthOnlyOnSecurityView);
+        boolean faceAuthOnlyOnSecurityView  = false
 
         if (mFaceManager != null && mFaceManager.isHardwareDetected() &&
                 !faceAuthOnlyOnSecurityView) {
