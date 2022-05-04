@@ -55,7 +55,7 @@ import java.util.Random;
 public class BuildNumberPreferenceController extends BasePreferenceController implements
         LifecycleObserver, OnStart {
 
-     private static final String ID_PROPERTY = "ro.system.build.id";
+     private static final String ID_PROPERTY = "ro.cipher.build.id";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
     static final int REQUEST_CONFIRM_PASSWORD_FOR_DEV_PREF = 100;
