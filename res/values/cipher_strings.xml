@@ -33,5 +33,9 @@
     <string name="status_bar_battery_style_circle">Circle</string>
     <string name="status_bar_battery_style_dotted_circle">Dotted сircle</string>
     <string name="status_bar_battery_style_text">Text</string>
+
+    <!-- Smart 5G -->
+    <string name="smart_5g_title">Smart 5G</string>
+    <string name="smart_5g_summary">Automatically switch between 5G and 4G to reduce battery consumption</string>
     
 </resources>
