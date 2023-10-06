@@ -174,16 +174,14 @@ public class PowerUsageFeatureProviderImpl implements PowerUsageFeatureProvider 
 
     @Override
     public Set<Integer> getOthersSystemComponentSet() {
+        return new ArraySet<>();
+    }
 
     @Override
     public Map<Long, Map<String, BatteryHistEntry>> getBatteryHistory(Context context) {
         return null;
     }
 
-    @Override
-    public Set<CharSequence> getHideBackgroundUsageTimeSet(Context context) {
-        return new ArraySet<>();
-    }
 
     @Override
     public Set<String> getOthersCustomComponentNameSet() {
