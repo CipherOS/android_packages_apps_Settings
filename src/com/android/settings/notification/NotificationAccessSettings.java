@@ -57,6 +57,7 @@ import java.util.List;
 @SearchIndexable
 public class NotificationAccessSettings extends EmptyTextSettings {
     private static final String TAG = "NotifAccessSettings";
+
     private static final ManagedServiceSettings.Config CONFIG =
             new ManagedServiceSettings.Config.Builder()
                     .setTag(TAG)
@@ -131,6 +132,12 @@ public class NotificationAccessSettings extends EmptyTextSettings {
         services.sort(new PackageItemInfo.DisplayNameComparator(mPm));
         for (ServiceInfo service : services) {
             final ComponentName cn = new ComponentName(service.packageName, service.name);
+            boolean isAllowed = mNm.isNotificationListenerAccessGranted(cn);
+            if (!isAllowed && cn.flattenToString().length()
+                    > NotificationManager.MAX_SERVICE_COMPONENT_NAME_LENGTH) {
+                continue;
+            }
+
             CharSequence title = null;
             try {
                 title = mPm.getApplicationInfoAsUser(
@@ -145,7 +152,7 @@ public class NotificationAccessSettings extends EmptyTextSettings {
             pref.setIcon(mIconDrawableFactory.getBadgedIcon(service, service.applicationInfo,
                     UserHandle.getUserId(service.applicationInfo.uid)));
             pref.setKey(cn.flattenToString());
-            pref.setSummary(mNm.isNotificationListenerAccessGranted(cn)
+            pref.setSummary(isAllowed
                     ? R.string.app_permission_summary_allowed
                     : R.string.app_permission_summary_not_allowed);
             if (managedProfileId != UserHandle.USER_NULL

@@ -35,6 +35,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -182,6 +183,7 @@ public class ChooseLockPattern extends SettingsActivity {
 
         setTitle(msg);
         findViewById(R.id.content_parent).setFitsSystemWindows(false);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
     }
 
     @Override
@@ -918,9 +920,13 @@ public class ChooseLockPattern extends SettingsActivity {
         @Override
         protected Pair<Boolean, Intent> saveAndVerifyInBackground() {
             final int userId = mUserId;
-            mUtils.setLockPatternSize(mPatternSize, userId);
-            final boolean success = mUtils.setLockCredential(mChosenPattern, mCurrentCredential,
-                    userId);
+            boolean success;
+            try {
+                success = mUtils.setLockCredential(mChosenPattern, mCurrentCredential, userId);
+            } catch (RuntimeException e) {
+                Log.e(TAG, "Failed to set lockscreen credential", e);
+                success = false;
+            }
             if (success) {
                 unifyProfileCredentialIfRequested();
             }

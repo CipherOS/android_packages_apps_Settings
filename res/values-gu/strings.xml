@@ -1930,7 +1930,7 @@
     <string name="internal_storage" msgid="999496851424448809">"આંતરિક સ્ટોરેજ"</string>
     <string name="recompute_size" msgid="1098091228370999128">"કદની ફરીથી ગણના કરી રહ્યું છે…"</string>
     <string name="clear_data_dlg_title" msgid="180446967743732410">"ઍપ્લિકેશન ડેટા કાઢી નાખીએ?"</string>
-    <string name="clear_data_dlg_text" msgid="7870723948123690332">"આ તમામ એપ્લિકેશનનો ડેટા કાયમી રીતે કાઢી નાંખવામાં આવશે. આમાં તમામ ફાઇલો, સેટિંગ્સ, એકાઉન્ટ્સ, ડેટાબેસેસ વગેરે શામેલ છે."</string>
+    <string name="clear_data_dlg_text" msgid="1107610960337399006">"આ ઍપના ડેટાને કાયમી રીતે કાઢી નાખવામાં આવશે. આમાં ફાઇલો, સેટિંગ, ડેટાબેઝ અને અન્ય ઍપ ડેટા પણ શામેલ હોય છે."</string>
     <string name="dlg_ok" msgid="1421350367857960997">"ઓકે"</string>
     <string name="dlg_cancel" msgid="5164705061530774899">"રદ કરો"</string>
     <string name="app_not_found_dlg_title" msgid="7122106240981109930"></string>
@@ -2933,7 +2933,7 @@
     <string name="vpn_connect_to" msgid="216709261691085594">"<xliff:g id="PROFILE">%s</xliff:g> સાથે કનેક્ટ કરો"</string>
     <string name="vpn_disconnect_confirm" msgid="6356789348816854539">"આ VPNને ડિસ્કનેક્ટ કરીએ?"</string>
     <string name="vpn_disconnect" msgid="7753808961085867345">"ડિસ્કનેક્ટ કરો"</string>
-    <string name="vpn_version" msgid="41856553718304367">"વર્ઝન <xliff:g id="VERSION">%s</xliff:g>"</string>
+    <string name="vpn_version" msgid="6344167191984400976">"વર્ઝન"</string>
     <string name="vpn_forget_long" msgid="729132269203870205">"VPN ભૂલી ગયાં"</string>
     <string name="vpn_replace_vpn_title" msgid="3994226561866340280">"અસ્તિત્વમાંની VPN ને બદલીએ?"</string>
     <string name="vpn_set_vpn_title" msgid="1667539483005810682">"હંમેશાં ચાલુ VPN સેટ કરીએ?"</string>

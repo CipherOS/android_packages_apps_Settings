@@ -1931,7 +1931,7 @@
     <string name="internal_storage" msgid="999496851424448809">"अंतर्गत स्टोरेज"</string>
     <string name="recompute_size" msgid="1098091228370999128">"आकाराचे पुनर्संगणन करत आहे…"</string>
     <string name="clear_data_dlg_title" msgid="180446967743732410">"अ‍ॅप डेटा हटवायचा?"</string>
-    <string name="clear_data_dlg_text" msgid="7870723948123690332">"या अ‍ॅपचा सर्व डेटा कायमचा हटवला जाईल. यात सर्व फाइल, सेटिंग्ज, खाती, डेटाबेस इ. समाविष्ट असेल."</string>
+    <string name="clear_data_dlg_text" msgid="1107610960337399006">"या ॲपचा डेटा कायमचा हटवला जाईल. यामध्ये फाइल, सेटिंग्ज, डेटाबेस आणि इतर अ‍ॅप डेटा यांचा समावेश आहे."</string>
     <string name="dlg_ok" msgid="1421350367857960997">"ठीक"</string>
     <string name="dlg_cancel" msgid="5164705061530774899">"रद्द करा"</string>
     <string name="app_not_found_dlg_title" msgid="7122106240981109930"></string>
@@ -2934,7 +2934,7 @@
     <string name="vpn_connect_to" msgid="216709261691085594">"<xliff:g id="PROFILE">%s</xliff:g> शी कनेक्ट करा"</string>
     <string name="vpn_disconnect_confirm" msgid="6356789348816854539">"हे VPN डिस्कनेक्ट करायचे?"</string>
     <string name="vpn_disconnect" msgid="7753808961085867345">"‍डिस्कनेक्ट करा"</string>
-    <string name="vpn_version" msgid="41856553718304367">"आवृत्ती <xliff:g id="VERSION">%s</xliff:g>"</string>
+    <string name="vpn_version" msgid="6344167191984400976">"आवृत्ती"</string>
     <string name="vpn_forget_long" msgid="729132269203870205">"VPN विसरा"</string>
     <string name="vpn_replace_vpn_title" msgid="3994226561866340280">"विद्यमान VPN पुनर्स्थित करायचे?"</string>
     <string name="vpn_set_vpn_title" msgid="1667539483005810682">"नेहमी-सुरू VPN सेट करायचे?"</string>

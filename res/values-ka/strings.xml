@@ -1930,7 +1930,7 @@
     <string name="internal_storage" msgid="999496851424448809">"შიდა მეხსიერება"</string>
     <string name="recompute_size" msgid="1098091228370999128">"ზომის გადათვლა…"</string>
     <string name="clear_data_dlg_title" msgid="180446967743732410">"წაიშალოს აპის მონაცემები?"</string>
-    <string name="clear_data_dlg_text" msgid="7870723948123690332">"აპის მონაცემები, მათ შორის ყველა ფაილი, პარამეტრი, ანგარიში, მონაცემთა ბაზა და ა.შ. სამუდამოდ წაიშლება."</string>
+    <string name="clear_data_dlg_text" msgid="1107610960337399006">"ამ აპის მონაცემები სამუდამოდ წაიშლება. ეს ეხება ფაილებს, პარამეტრებს, მონაცემთა ბაზებსა და აპის სხვა მონაცემებს."</string>
     <string name="dlg_ok" msgid="1421350367857960997">"კარგი"</string>
     <string name="dlg_cancel" msgid="5164705061530774899">"გაუქმება"</string>
     <string name="app_not_found_dlg_title" msgid="7122106240981109930"></string>
@@ -2933,7 +2933,7 @@
     <string name="vpn_connect_to" msgid="216709261691085594">"დაკავშირებულია <xliff:g id="PROFILE">%s</xliff:g>-თან"</string>
     <string name="vpn_disconnect_confirm" msgid="6356789348816854539">"გსურთ ამ VPN-თან კავშირის გაწყვეტა?"</string>
     <string name="vpn_disconnect" msgid="7753808961085867345">"კავშირის გაწყვეტა"</string>
-    <string name="vpn_version" msgid="41856553718304367">"ვერსია <xliff:g id="VERSION">%s</xliff:g>"</string>
+    <string name="vpn_version" msgid="6344167191984400976">"ვერსია"</string>
     <string name="vpn_forget_long" msgid="729132269203870205">"VPN-ის დავიწყება"</string>
     <string name="vpn_replace_vpn_title" msgid="3994226561866340280">"გსურთ არსებული VPN-ის ჩანაცვლება?"</string>
     <string name="vpn_set_vpn_title" msgid="1667539483005810682">"გსურთ ყოველთვის ჩართული VPN-ის დაყენება?"</string>
