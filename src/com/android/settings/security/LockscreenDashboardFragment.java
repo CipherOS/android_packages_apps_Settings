@@ -31,6 +31,8 @@ import android.provider.Settings;
 
 import androidx.annotation.VisibleForTesting;
 
+import com.android.internal.util.cipher.OmniJawsClient;
+
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController;
@@ -40,6 +42,7 @@ import com.android.settings.gestures.PickupGesturePreferenceController;
 import com.android.settings.notification.LockScreenNotificationPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.security.screenlock.LockScreenPreferenceController;
+import com.android.settingslib.PrimarySwitchPreference;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.search.SearchIndexable;
@@ -69,12 +72,15 @@ public class LockscreenDashboardFragment extends DashboardFragment
     @VisibleForTesting
     static final String KEY_ADD_USER_FROM_LOCK_SCREEN =
             "security_lockscreen_add_users_when_locked";
-
+    static final String KEY_WEATHER = "lockscreen_weather_enabled";
 
     private AmbientDisplayConfiguration mConfig;
     private OwnerInfoPreferenceController mOwnerInfoPreferenceController;
     @VisibleForTesting
     ContentObserver mControlsContentObserver;
+
+    private PrimarySwitchPreference mWeather;
+    private OmniJawsClient mWeatherClient;
 
     @Override
     public int getMetricsCategory() {
@@ -94,6 +100,9 @@ public class LockscreenDashboardFragment extends DashboardFragment
                 R.string.locked_work_profile_notification_title);
         replaceEnterpriseStringTitle("security_setting_lock_screen_notif_work_header",
                 WORK_PROFILE_NOTIFICATIONS_SECTION_HEADER, R.string.profile_section_header);
+        mWeather = (PrimarySwitchPreference) findPreference(KEY_WEATHER);
+        mWeatherClient = new OmniJawsClient(getContext());
+        updateWeatherSettings();
     }
 
     @Override
@@ -193,4 +202,18 @@ public class LockscreenDashboardFragment extends DashboardFragment
                             .isAvailable();
                 }
             };
+
+    private void updateWeatherSettings() {
+        if (mWeatherClient == null || mWeather == null) return;
+        boolean weatherEnabled = mWeatherClient.isOmniJawsEnabled();
+        mWeather.setSwitchEnabled(weatherEnabled);
+        mWeather.setSummary(weatherEnabled ? R.string.lockscreen_weather_summary :
+            R.string.lockscreen_weather_enabled_info);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateWeatherSettings();
+    }
 }

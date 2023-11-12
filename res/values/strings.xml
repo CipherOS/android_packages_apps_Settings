@@ -12419,6 +12419,11 @@
         <item quantity="other"><xliff:g id="first">%1$s</xliff:g>, <xliff:g id="second">%2$s</xliff:g></item>
     </plurals>
 
+    <!-- Weather -->
+    <string name="lockscreen_weather_title">Weather update</string>
+    <string name="lockscreen_weather_summary">Display current weather update</string>
+    <string name="lockscreen_weather_enabled_info">Requires weather service to be enabled</string>
+
     <!-- Title for RTT setting. [CHAR LIMIT=NONE] -->
     <string name="rtt_settings_title"></string>
     <!-- Subtext for showing the option of RTT setting. [CHAR LIMIT=NONE] -->

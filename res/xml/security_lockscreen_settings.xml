@@ -81,6 +81,13 @@
             android:title="@string/lockscreen_double_line_clock_setting_toggle"
             android:summary="@string/lockscreen_double_line_clock_summary"
             settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
+
+        <com.android.settingslib.PrimarySwitchPreference
+            android:key="lockscreen_weather_enabled"
+            android:title="@string/lockscreen_weather_title"
+            android:summary="@string/lockscreen_weather_summary"
+            settings:controller="com.android.settings.omnijaws.LockScreenWeatherPreferenceController" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
