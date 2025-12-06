@@ -14949,4 +14949,7 @@
     <string name="safety_center_device_finder_search_terms"></string>
     <!-- Safety Center system component update search terms [CHAR LIMIT=NONE] -->
     <string name="safety_center_system_component_update_search_terms"></string>
+
+    <!-- Cipher Version -->
+    <string name="cipher_version">Cipher version</string>
 </resources>
